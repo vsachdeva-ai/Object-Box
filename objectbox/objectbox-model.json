@@ -1,0 +1,4558 @@
+{
+  "_note1": "KEEP THIS FILE! Check it into a version control system (VCS) like git.",
+  "_note2": "ObjectBox manages crucial IDs for your object model. See docs for details.",
+  "_note3": "If you have VCS merge conflicts, you must resolve them according to ObjectBox docs.",
+  "entities": [
+    {
+      "id": "1:7483594836757812859",
+      "lastPropertyId": "8:8295828458330971188",
+      "name": "ActionAudit",
+      "externalName": "ActionAudit",
+      "flags": 2,
+      "properties": [
+        {
+          "id": "1:2651143359112053711",
+          "name": "id",
+          "type": 6,
+          "flags": 1
+        },
+        {
+          "id": "2:6775832542964804038",
+          "name": "actionEvent",
+          "type": 9,
+          "externalName": "action_event"
+        },
+        {
+          "id": "3:3807214739154945380",
+          "name": "actionEventInfo",
+          "type": 9,
+          "externalName": "action_event_info"
+        },
+        {
+          "id": "4:7455514949851776387",
+          "name": "jobCode",
+          "indexId": "3:5878624919664863517",
+          "type": 9,
+          "externalName": "job_code",
+          "flags": 2048
+        },
+        {
+          "id": "5:5590635073920524828",
+          "name": "userId",
+          "type": 9,
+          "externalName": "user_id"
+        },
+        {
+          "id": "6:2030943790650466918",
+          "name": "deviceId",
+          "type": 9,
+          "externalName": "device_id"
+        },
+        {
+          "id": "7:5199490683327468044",
+          "name": "auditDate",
+          "type": 6,
+          "externalName": "audit_date"
+        },
+        {
+          "id": "8:8295828458330971188",
+          "name": "linkedJobNumber",
+          "type": 9,
+          "externalName": "linked_job_number"
+        }
+      ],
+      "relations": []
+    },
+    {
+      "id": "2:6018618434112355522",
+      "lastPropertyId": "14:2553044890530403626",
+      "name": "Art1ItemSyncStatus",
+      "externalName": "Art1ItemSyncStatus",
+      "flags": 2,
+      "properties": [
+        {
+          "id": "1:4751499717051991730",
+          "name": "id",
+          "type": 6,
+          "flags": 1
+        },
+        {
+          "id": "2:4497623005997715478",
+          "name": "diaryId",
+          "indexId": "4:2116675890676810044",
+          "type": 9,
+          "externalName": "diary_id",
+          "flags": 2048
+        },
+        {
+          "id": "3:6962680609461537340",
+          "name": "cartonCode",
+          "type": 9,
+          "externalName": "carton_code"
+        },
+        {
+          "id": "4:7088640760089567819",
+          "name": "createdDate",
+          "type": 6,
+          "externalName": "created_date"
+        },
+        {
+          "id": "5:5064343375881799665",
+          "name": "updatedDate",
+          "type": 6,
+          "externalName": "updated_date"
+        },
+        {
+          "id": "6:1569695445229397141",
+          "name": "status",
+          "type": 9,
+          "externalName": "status"
+        },
+        {
+          "id": "7:363824952888227740",
+          "name": "images",
+          "type": 30,
+          "externalName": "images"
+        },
+        {
+          "id": "8:5482722960333333116",
+          "name": "inId",
+          "type": 6,
+          "externalName": "in_id"
+        },
+        {
+          "id": "9:5417234679010200165",
+          "name": "containerType",
+          "type": 9,
+          "externalName": "container_type"
+        },
+        {
+          "id": "10:5076180146205828303",
+          "name": "containerCode",
+          "type": 9,
+          "externalName": "container_code"
+        },
+        {
+          "id": "11:6444111159662478029",
+          "name": "spaceName",
+          "type": 9,
+          "externalName": "space_name"
+        },
+        {
+          "id": "12:5597809677498388245",
+          "name": "failedSyncRetryCount",
+          "type": 6,
+          "externalName": "failed_sync_retry_count"
+        },
+        {
+          "id": "13:5973735052957310107",
+          "name": "residentialItemType",
+          "type": 9,
+          "externalName": "residential_item_type"
+        },
+        {
+          "id": "14:2553044890530403626",
+          "name": "linkedJobNumber",
+          "type": 9,
+          "externalName": "linked_job_number"
+        }
+      ],
+      "relations": []
+    },
+    {
+      "id": "3:4419485554099937326",
+      "lastPropertyId": "9:4936972952420443684",
+      "name": "CartonDebtorAudit",
+      "externalName": "CartonDebtorAudit",
+      "flags": 2,
+      "properties": [
+        {
+          "id": "1:3442034279388872153",
+          "name": "id",
+          "type": 6,
+          "flags": 1
+        },
+        {
+          "id": "2:1968800422998469428",
+          "name": "jobCode",
+          "type": 9,
+          "externalName": "job_code"
+        },
+        {
+          "id": "3:5340555731288710241",
+          "name": "cartonCode",
+          "type": 9,
+          "externalName": "carton_code"
+        },
+        {
+          "id": "4:1498999251456274971",
+          "name": "currentDebtor",
+          "type": 9,
+          "externalName": "current_debtor"
+        },
+        {
+          "id": "5:3727228860822390349",
+          "name": "assignedJobs",
+          "type": 30,
+          "externalName": "assigned_jobs"
+        },
+        {
+          "id": "6:6717409995870880617",
+          "name": "userId",
+          "type": 9,
+          "externalName": "user_id"
+        },
+        {
+          "id": "7:727745997363814381",
+          "name": "deviceId",
+          "type": 9,
+          "externalName": "device_id"
+        },
+        {
+          "id": "8:7035315747865521999",
+          "name": "createdDate",
+          "type": 6,
+          "externalName": "created_date"
+        },
+        {
+          "id": "9:4936972952420443684",
+          "name": "updatedDate",
+          "type": 6,
+          "externalName": "updated_date"
+        }
+      ],
+      "relations": []
+    },
+    {
+      "id": "4:4265759916009108960",
+      "lastPropertyId": "15:2171941999965621114",
+      "name": "CartonLinkAudit",
+      "externalName": "CartonLinkAudit",
+      "flags": 2,
+      "properties": [
+        {
+          "id": "1:4919754646836681860",
+          "name": "id",
+          "type": 6,
+          "flags": 1
+        },
+        {
+          "id": "2:3175823875874897402",
+          "name": "cartonLinkAuditId",
+          "type": 9,
+          "externalName": "carton_link_audit_id"
+        },
+        {
+          "id": "3:3593786301967313452",
+          "name": "cartonLinkAuditIdHash",
+          "type": 6,
+          "externalName": "carton_link_audit_id_hash"
+        },
+        {
+          "id": "4:7306532617115356217",
+          "name": "jobNumber",
+          "indexId": "5:8630952831916898226",
+          "type": 9,
+          "externalName": "job_number",
+          "flags": 2048
+        },
+        {
+          "id": "5:8514468990280695582",
+          "name": "linkedJobNumber",
+          "type": 9,
+          "externalName": "linked_job_number"
+        },
+        {
+          "id": "6:1800552497031140382",
+          "name": "cartonCode",
+          "type": 9,
+          "externalName": "carton_code"
+        },
+        {
+          "id": "7:5558002831944197955",
+          "name": "containerCode",
+          "type": 9,
+          "externalName": "container_code"
+        },
+        {
+          "id": "8:160292275374382847",
+          "name": "lifecycleState",
+          "type": 9,
+          "externalName": "lifecycle_state"
+        },
+        {
+          "id": "9:4206995703004520261",
+          "name": "userId",
+          "type": 9,
+          "externalName": "user_id"
+        },
+        {
+          "id": "10:8660118093866772985",
+          "name": "createdDate",
+          "type": 6,
+          "externalName": "created_date"
+        },
+        {
+          "id": "11:1461353032812894029",
+          "name": "updatedDate",
+          "type": 6,
+          "externalName": "updated_date"
+        },
+        {
+          "id": "12:797568737161769982",
+          "name": "deviceId",
+          "type": 9,
+          "externalName": "device_id"
+        },
+        {
+          "id": "13:131563726338115783",
+          "name": "movewareCategory",
+          "type": 9,
+          "externalName": "moveware_category"
+        },
+        {
+          "id": "14:3463942814383418892",
+          "name": "isDeleted",
+          "type": 1,
+          "externalName": "is_deleted"
+        },
+        {
+          "id": "15:2171941999965621114",
+          "name": "insertionSource",
+          "type": 9,
+          "externalName": "insertion_source"
+        }
+      ],
+      "relations": []
+    },
+    {
+      "id": "5:8963147725250805336",
+      "lastPropertyId": "28:170065076376640833",
+      "name": "CartonMasterInfo",
+      "externalName": "CartonMasterInfo",
+      "flags": 2,
+      "properties": [
+        {
+          "id": "1:576946227223275544",
+          "name": "id",
+          "type": 6,
+          "flags": 1
+        },
+        {
+          "id": "2:5374638413864203076",
+          "name": "cartonId",
+          "type": 9,
+          "externalName": "carton_id"
+        },
+        {
+          "id": "3:3411178975101929737",
+          "name": "cartonIdHash",
+          "type": 6,
+          "externalName": "carton_id_hash"
+        },
+        {
+          "id": "4:448193050340060601",
+          "name": "jobCode",
+          "indexId": "6:3263658532462602082",
+          "type": 9,
+          "externalName": "job_code",
+          "flags": 2048
+        },
+        {
+          "id": "5:6058709429974682304",
+          "name": "cartonCode",
+          "type": 9,
+          "externalName": "carton_code"
+        },
+        {
+          "id": "6:7202842368205915018",
+          "name": "userId",
+          "type": 9,
+          "externalName": "user_id"
+        },
+        {
+          "id": "7:3294706669040663052",
+          "name": "photoIdentity",
+          "type": 9,
+          "externalName": "photo_identity"
+        },
+        {
+          "id": "8:480007102905516485",
+          "name": "packingTypeId",
+          "type": 6,
+          "externalName": "packing_type_id"
+        },
+        {
+          "id": "9:8778731367392396554",
+          "name": "description",
+          "type": 9,
+          "externalName": "description"
+        },
+        {
+          "id": "10:9165532750287335015",
+          "name": "length",
+          "type": 8,
+          "externalName": "length"
+        },
+        {
+          "id": "11:2138813712705543669",
+          "name": "width",
+          "type": 8,
+          "externalName": "width"
+        },
+        {
+          "id": "12:5950103937004465023",
+          "name": "weight",
+          "type": 8,
+          "externalName": "weight"
+        },
+        {
+          "id": "13:8074388362689562506",
+          "name": "height",
+          "type": 8,
+          "externalName": "height"
+        },
+        {
+          "id": "14:7682183692171085105",
+          "name": "lifecycleState",
+          "type": 9,
+          "externalName": "lifecycle_state"
+        },
+        {
+          "id": "15:7678151364818323165",
+          "name": "packDate",
+          "type": 6,
+          "externalName": "pack_date"
+        },
+        {
+          "id": "16:1303224928053324597",
+          "name": "offLoadDate",
+          "type": 6,
+          "externalName": "offload_date"
+        },
+        {
+          "id": "17:3430963106729964124",
+          "name": "partialPackDate",
+          "type": 6,
+          "externalName": "partial_pack_date"
+        },
+        {
+          "id": "18:7336254687036868727",
+          "name": "deviceId",
+          "type": 9,
+          "externalName": "device_id"
+        },
+        {
+          "id": "19:633161892279524680",
+          "name": "createdDate",
+          "type": 6,
+          "externalName": "created_date"
+        },
+        {
+          "id": "20:5959069198861882461",
+          "name": "descriptionGeneratedBy",
+          "type": 9,
+          "externalName": "description_generated_by"
+        },
+        {
+          "id": "21:2812210206566429444",
+          "name": "movewareCategory",
+          "type": 9,
+          "externalName": "moveware_category"
+        },
+        {
+          "id": "22:3083459831116694808",
+          "name": "lengthInInch",
+          "type": 8,
+          "externalName": "length_in_inch"
+        },
+        {
+          "id": "23:2150729771087032848",
+          "name": "widthInInch",
+          "type": 8,
+          "externalName": "width_in_inch"
+        },
+        {
+          "id": "24:2770565216293105825",
+          "name": "heightInInch",
+          "type": 8,
+          "externalName": "height_in_inch"
+        },
+        {
+          "id": "25:7211002432191739102",
+          "name": "weightInPound",
+          "type": 8,
+          "externalName": "weight_in_pound"
+        },
+        {
+          "id": "26:4741340487232218231",
+          "name": "linkedJobNumber",
+          "type": 9,
+          "externalName": "linked_job_number"
+        },
+        {
+          "id": "27:7354203156792467824",
+          "name": "updatedDate",
+          "type": 6,
+          "externalName": "updated_date"
+        },
+        {
+          "id": "28:170065076376640833",
+          "name": "isPackByOwner",
+          "type": 1,
+          "externalName": "is_pack_by_owner"
+        }
+      ],
+      "relations": []
+    },
+    {
+      "id": "6:623301165647926334",
+      "lastPropertyId": "11:3427815457992014230",
+      "name": "CartonPackingType",
+      "externalName": "CartonPackingType",
+      "flags": 2,
+      "properties": [
+        {
+          "id": "1:5343728009720697116",
+          "name": "id",
+          "type": 6,
+          "flags": 1
+        },
+        {
+          "id": "2:4338764966231377059",
+          "name": "cartonPackingTypeId",
+          "type": 6,
+          "externalName": "carton_packing_type_id"
+        },
+        {
+          "id": "3:8499434633667454676",
+          "name": "cartonPackingTypeName",
+          "type": 9,
+          "externalName": "carton_packing_type_name"
+        },
+        {
+          "id": "4:363617202224981937",
+          "name": "subCartonPackingTypeName",
+          "type": 9,
+          "externalName": "sub_carton_packing_type_name"
+        },
+        {
+          "id": "5:8529915691754357340",
+          "name": "branchName",
+          "type": 9,
+          "externalName": "branch_name"
+        },
+        {
+          "id": "6:8859010065739432254",
+          "name": "length",
+          "type": 8,
+          "externalName": "length"
+        },
+        {
+          "id": "7:2877959991534442795",
+          "name": "width",
+          "type": 8,
+          "externalName": "width"
+        },
+        {
+          "id": "8:6408796620477399793",
+          "name": "height",
+          "type": 8,
+          "externalName": "height"
+        },
+        {
+          "id": "9:7478686098095807155",
+          "name": "lengthInInch",
+          "type": 8,
+          "externalName": "length_in_inch"
+        },
+        {
+          "id": "10:4070095963970994086",
+          "name": "widthInInch",
+          "type": 8,
+          "externalName": "width_in_inch"
+        },
+        {
+          "id": "11:3427815457992014230",
+          "name": "heightInInch",
+          "type": 8,
+          "externalName": "height_in_inch"
+        }
+      ],
+      "relations": []
+    },
+    {
+      "id": "7:5523079645435118870",
+      "lastPropertyId": "13:3059550472984100212",
+      "name": "CartonTypeInfo",
+      "externalName": "CartonTypeInfo",
+      "flags": 2,
+      "properties": [
+        {
+          "id": "1:2590972690046447214",
+          "name": "id",
+          "type": 6,
+          "flags": 1
+        },
+        {
+          "id": "2:1581102839108110917",
+          "name": "jobCode",
+          "type": 9,
+          "externalName": "job_code"
+        },
+        {
+          "id": "3:8495520758189767824",
+          "name": "cartonCode",
+          "type": 9,
+          "externalName": "carton_code"
+        },
+        {
+          "id": "4:3468223761208543131",
+          "name": "userId",
+          "type": 9,
+          "externalName": "user_id"
+        },
+        {
+          "id": "5:357491754638302564",
+          "name": "deviceId",
+          "type": 9,
+          "externalName": "device_id"
+        },
+        {
+          "id": "6:4757794355407605623",
+          "name": "createdDate",
+          "type": 6,
+          "externalName": "created_date"
+        },
+        {
+          "id": "7:6566106361396481651",
+          "name": "cartonType",
+          "type": 9,
+          "externalName": "carton_type"
+        },
+        {
+          "id": "8:2326072885101726325",
+          "name": "jobAPIType",
+          "type": 9,
+          "externalName": "job_api_type"
+        },
+        {
+          "id": "9:1439861091624214187",
+          "name": "lastDdid",
+          "type": 9,
+          "externalName": "last_ddid"
+        },
+        {
+          "id": "10:6398544095644018668",
+          "name": "lastJob",
+          "type": 9,
+          "externalName": "last_job"
+        },
+        {
+          "id": "11:4944491667408379808",
+          "name": "lastClientName",
+          "type": 9,
+          "externalName": "last_client_name"
+        },
+        {
+          "id": "12:2080192311754392337",
+          "name": "lastClientCode",
+          "type": 9,
+          "externalName": "last_client_code"
+        },
+        {
+          "id": "13:3059550472984100212",
+          "name": "oldJobCode",
+          "type": 9,
+          "externalName": "old_job_code"
+        }
+      ],
+      "relations": []
+    },
+    {
+      "id": "8:8538093246554194030",
+      "lastPropertyId": "12:2581156298421701190",
+      "name": "ConditionReportImageSummary",
+      "externalName": "ConditionReportImageSummary",
+      "flags": 2,
+      "properties": [
+        {
+          "id": "1:164605663853149351",
+          "name": "id",
+          "type": 6,
+          "flags": 1
+        },
+        {
+          "id": "2:8558059673911021713",
+          "name": "conditionReportImageSummaryId",
+          "type": 9,
+          "externalName": "condition_report_image_summary_id"
+        },
+        {
+          "id": "3:1879547528393656324",
+          "name": "jobNumber",
+          "indexId": "7:7226609583492150466",
+          "type": 9,
+          "externalName": "job_number",
+          "flags": 2048
+        },
+        {
+          "id": "4:4392348600978429452",
+          "name": "itemId",
+          "type": 9,
+          "externalName": "item_id"
+        },
+        {
+          "id": "5:7274013959244405243",
+          "name": "conditionReportId",
+          "type": 9,
+          "externalName": "condition_report_id"
+        },
+        {
+          "id": "6:1694042991095366556",
+          "name": "conditionSummary",
+          "type": 9,
+          "externalName": "condition_summary"
+        },
+        {
+          "id": "7:4850996035707480653",
+          "name": "photoIdentity",
+          "type": 9,
+          "externalName": "photo_identity"
+        },
+        {
+          "id": "8:235641876736566689",
+          "name": "userId",
+          "type": 9,
+          "externalName": "user_id"
+        },
+        {
+          "id": "9:1847738948498761647",
+          "name": "createdDate",
+          "type": 6,
+          "externalName": "created_date"
+        },
+        {
+          "id": "10:7804833851223134582",
+          "name": "deviceId",
+          "type": 9,
+          "externalName": "device_id"
+        },
+        {
+          "id": "11:1681315372446321387",
+          "name": "conditionCheckedDate",
+          "type": 6,
+          "externalName": "condition_checked_date"
+        },
+        {
+          "id": "12:2581156298421701190",
+          "name": "linkedJobNumber",
+          "type": 9,
+          "externalName": "linked_job_number"
+        }
+      ],
+      "relations": []
+    },
+    {
+      "id": "9:517635968522809090",
+      "lastPropertyId": "24:8351669771723177532",
+      "name": "ConditionReportSummary",
+      "externalName": "ConditionReportSummary",
+      "flags": 2,
+      "properties": [
+        {
+          "id": "1:2039745682905268306",
+          "name": "id",
+          "type": 6,
+          "flags": 1
+        },
+        {
+          "id": "2:8283129679331508319",
+          "name": "conditionReportId",
+          "type": 9,
+          "externalName": "condition_report_id"
+        },
+        {
+          "id": "3:2652079660211730549",
+          "name": "conditionReportIdHash",
+          "type": 6,
+          "externalName": "condition_report_id_hash"
+        },
+        {
+          "id": "4:665098998199973394",
+          "name": "jobNumber",
+          "indexId": "8:829328266473347810",
+          "type": 9,
+          "externalName": "job_number",
+          "flags": 2048
+        },
+        {
+          "id": "5:7824555555853265164",
+          "name": "itemId",
+          "type": 9,
+          "externalName": "item_id"
+        },
+        {
+          "id": "6:2180221734670012961",
+          "name": "itemIdHash",
+          "type": 6,
+          "externalName": "item_id_hash"
+        },
+        {
+          "id": "7:7130073024129201094",
+          "name": "conditionSummary",
+          "type": 9,
+          "externalName": "condition_summary"
+        },
+        {
+          "id": "8:1502350411917486987",
+          "name": "conditionImageIdentities",
+          "type": 30,
+          "externalName": "condition_image_identities"
+        },
+        {
+          "id": "9:6949823208812350825",
+          "name": "userId",
+          "type": 9,
+          "externalName": "user_id"
+        },
+        {
+          "id": "10:6086969124066460818",
+          "name": "createdDate",
+          "type": 6,
+          "externalName": "created_date"
+        },
+        {
+          "id": "11:6112180212743627490",
+          "name": "conditionCheckedDate",
+          "type": 6,
+          "externalName": "condition_checked_date"
+        },
+        {
+          "id": "12:3180930484228105223",
+          "name": "contentGeneratedBy",
+          "type": 9,
+          "externalName": "content_generated_by"
+        },
+        {
+          "id": "13:8745517906169496049",
+          "name": "status",
+          "type": 9,
+          "externalName": "status"
+        },
+        {
+          "id": "14:6086925315160566255",
+          "name": "isValid",
+          "type": 1,
+          "externalName": "is_valid"
+        },
+        {
+          "id": "15:589682539809580603",
+          "name": "deviceId",
+          "type": 9,
+          "externalName": "device_id"
+        },
+        {
+          "id": "16:2776707170152924658",
+          "name": "isEdited",
+          "type": 1,
+          "externalName": "is_edited"
+        },
+        {
+          "id": "17:6934374535138836846",
+          "name": "conditionReportType",
+          "type": 9,
+          "externalName": "condition_report_type"
+        },
+        {
+          "id": "18:2874901090561275330",
+          "name": "isDeleted",
+          "type": 1,
+          "externalName": "is_deleted"
+        },
+        {
+          "id": "19:3243292652777889667",
+          "name": "reportVersion",
+          "type": 6,
+          "externalName": "report_version"
+        },
+        {
+          "id": "20:3468022052198316876",
+          "name": "linkedJobNumber",
+          "type": 9,
+          "externalName": "linked_job_number"
+        },
+        {
+          "id": "21:4213473205797064688",
+          "name": "pcrId",
+          "type": 9,
+          "externalName": "pcr_id"
+        },
+        {
+          "id": "22:2240607144688781004",
+          "name": "pcrIdHash",
+          "type": 6,
+          "externalName": "pcr_id_hash"
+        },
+        {
+          "id": "23:2001306870445981407",
+          "name": "pcrSummary",
+          "type": 9,
+          "externalName": "pcr_summary"
+        },
+        {
+          "id": "24:8351669771723177532",
+          "name": "pcrDate",
+          "type": 6,
+          "externalName": "pcr_date"
+        }
+      ],
+      "relations": []
+    },
+    {
+      "id": "10:4815014882065323750",
+      "lastPropertyId": "16:4322398798275145230",
+      "name": "ContainerMasterInfo",
+      "externalName": "ContainerMasterInfo",
+      "flags": 2,
+      "properties": [
+        {
+          "id": "1:7530384924173892953",
+          "name": "id",
+          "type": 6,
+          "flags": 1
+        },
+        {
+          "id": "2:2083710111613067422",
+          "name": "containerId",
+          "type": 9,
+          "externalName": "container_id"
+        },
+        {
+          "id": "3:3255082130977702886",
+          "name": "containerIdHash",
+          "type": 6,
+          "externalName": "container_id_hash"
+        },
+        {
+          "id": "4:1951465635206613011",
+          "name": "containerCode",
+          "type": 9,
+          "externalName": "container_code"
+        },
+        {
+          "id": "5:2393948665971914548",
+          "name": "jobCode",
+          "indexId": "9:7936787528187636705",
+          "type": 9,
+          "externalName": "job_code",
+          "flags": 2048
+        },
+        {
+          "id": "6:1952293491789897761",
+          "name": "userId",
+          "type": 9,
+          "externalName": "user_id"
+        },
+        {
+          "id": "7:2759968692568712902",
+          "name": "createdDate",
+          "type": 6,
+          "externalName": "created_date"
+        },
+        {
+          "id": "8:6642615636647631844",
+          "name": "updatedDate",
+          "type": 6,
+          "externalName": "updated_date"
+        },
+        {
+          "id": "9:779997668891345523",
+          "name": "lifecycleState",
+          "type": 9,
+          "externalName": "lifecycle_state"
+        },
+        {
+          "id": "10:8033100106678343618",
+          "name": "packDate",
+          "type": 6,
+          "externalName": "pack_date"
+        },
+        {
+          "id": "11:3055161950833088534",
+          "name": "offLoadDate",
+          "type": 6,
+          "externalName": "offload_date"
+        },
+        {
+          "id": "12:7444469462586327636",
+          "name": "partialPackDate",
+          "type": 6,
+          "externalName": "partial_pack_date"
+        },
+        {
+          "id": "13:1251352313486163483",
+          "name": "deviceId",
+          "type": 9,
+          "externalName": "device_id"
+        },
+        {
+          "id": "14:4837888123481235525",
+          "name": "isFromMoveware",
+          "type": 1,
+          "externalName": "is_from_moveware"
+        },
+        {
+          "id": "15:7704942799015106711",
+          "name": "movewareCategory",
+          "type": 9,
+          "externalName": "moveware_category"
+        },
+        {
+          "id": "16:4322398798275145230",
+          "name": "linkedJobNumber",
+          "type": 9,
+          "externalName": "linked_job_number"
+        }
+      ],
+      "relations": []
+    },
+    {
+      "id": "11:5393816139744302262",
+      "lastPropertyId": "8:6316876856234091814",
+      "name": "CountryConfig",
+      "externalName": "CountryConfig",
+      "flags": 2,
+      "properties": [
+        {
+          "id": "1:7359448655436081833",
+          "name": "id",
+          "type": 6,
+          "flags": 1
+        },
+        {
+          "id": "2:7042641853721350684",
+          "name": "countryCode",
+          "type": 9,
+          "externalName": "country_code"
+        },
+        {
+          "id": "3:1149919208245921375",
+          "name": "countryName",
+          "type": 9,
+          "externalName": "country_name"
+        },
+        {
+          "id": "4:5043752159338763704",
+          "name": "defaultDateFormat",
+          "type": 9,
+          "externalName": "default_date_format"
+        },
+        {
+          "id": "5:298866061400972601",
+          "name": "defaultMeasurementUnit",
+          "type": 9,
+          "externalName": "default_measurement_unit"
+        },
+        {
+          "id": "6:6026298041734206704",
+          "name": "defaultWeightUnit",
+          "type": 9,
+          "externalName": "default_weight_unit"
+        },
+        {
+          "id": "7:5875863347981802750",
+          "name": "countryIsdCode",
+          "type": 9,
+          "externalName": "country_isd_code"
+        },
+        {
+          "id": "8:6316876856234091814",
+          "name": "countryCurrency",
+          "type": 9,
+          "externalName": "country_currency"
+        }
+      ],
+      "relations": []
+    },
+    {
+      "id": "12:6962260615537914991",
+      "lastPropertyId": "24:1414998343325014755",
+      "name": "DiaryActionReviewInfo",
+      "externalName": "DiaryActionReviewInfo",
+      "flags": 2,
+      "properties": [
+        {
+          "id": "1:6809267822782974702",
+          "name": "id",
+          "type": 6,
+          "flags": 1
+        },
+        {
+          "id": "2:4969278455221354134",
+          "name": "diaryActionReviewId",
+          "type": 9,
+          "externalName": "unique_id"
+        },
+        {
+          "id": "3:3557310940013614878",
+          "name": "jobNumber",
+          "indexId": "10:8794978343319853051",
+          "type": 9,
+          "externalName": "job_number",
+          "flags": 2048
+        },
+        {
+          "id": "4:8926333567804716685",
+          "name": "linkedJobNumber",
+          "type": 9,
+          "externalName": "linked_job_number"
+        },
+        {
+          "id": "5:3678568042281691329",
+          "name": "diaryActionName",
+          "type": 9,
+          "externalName": "diary_action_name"
+        },
+        {
+          "id": "6:4820349865649842371",
+          "name": "collectFromAddress",
+          "type": 9,
+          "externalName": "collect_from_address"
+        },
+        {
+          "id": "7:2301301944769472442",
+          "name": "deliverToAddress",
+          "type": 9,
+          "externalName": "deliver_to_address"
+        },
+        {
+          "id": "8:7189394017069774280",
+          "name": "positiveFeedback",
+          "type": 1,
+          "externalName": "positive_feedback"
+        },
+        {
+          "id": "9:1079945831088136551",
+          "name": "negativeFeedback",
+          "type": 1,
+          "externalName": "negative_feedback"
+        },
+        {
+          "id": "10:2646552875888650428",
+          "name": "feedbackFromClientNote",
+          "type": 9,
+          "externalName": "client_feedback_note"
+        },
+        {
+          "id": "11:3586300778175173148",
+          "name": "materialsNote",
+          "type": 9,
+          "externalName": "materials_note"
+        },
+        {
+          "id": "12:545543798622901304",
+          "name": "accessParkingTickets",
+          "type": 1,
+          "externalName": "access_parking_tickets"
+        },
+        {
+          "id": "13:7581816618779841842",
+          "name": "accessParkingTicketsNote",
+          "type": 9,
+          "externalName": "access_parking_tickets_note"
+        },
+        {
+          "id": "14:4152068352393075396",
+          "name": "anyDamages",
+          "type": 1,
+          "externalName": "any_damages"
+        },
+        {
+          "id": "15:2635992043247831908",
+          "name": "damagesPhotosTaken",
+          "type": 1,
+          "externalName": "damages_photos_taken"
+        },
+        {
+          "id": "16:349454661297713253",
+          "name": "damagesNote",
+          "type": 9,
+          "externalName": "damages_note"
+        },
+        {
+          "id": "17:3874293868488431371",
+          "name": "riskAssessmentHeavyAwkwardItems",
+          "type": 1,
+          "externalName": "risk_heavy_awkward_items"
+        },
+        {
+          "id": "18:6539472720523670507",
+          "name": "riskAssessmentOfficeContacted",
+          "type": 1,
+          "externalName": "risk_office_contacted"
+        },
+        {
+          "id": "19:3301709830744181876",
+          "name": "riskAssessmentReceivedAuthorisation",
+          "type": 1,
+          "externalName": "risk_received_authorisation"
+        },
+        {
+          "id": "20:4869387550527148441",
+          "name": "riskAssessmentNote",
+          "type": 9,
+          "externalName": "risk_assessment_note"
+        },
+        {
+          "id": "21:4151943039505156489",
+          "name": "userId",
+          "type": 9,
+          "externalName": "user_id"
+        },
+        {
+          "id": "22:5288314936507789293",
+          "name": "deviceId",
+          "type": 9,
+          "externalName": "device_id"
+        },
+        {
+          "id": "23:1760293905872818027",
+          "name": "createdDate",
+          "type": 6,
+          "externalName": "created_date"
+        },
+        {
+          "id": "24:1414998343325014755",
+          "name": "updatedDate",
+          "type": 6,
+          "externalName": "updated_date"
+        }
+      ],
+      "relations": []
+    },
+    {
+      "id": "13:6030326862626770678",
+      "lastPropertyId": "8:6605237218925521517",
+      "name": "DiaryCommunicationEvents",
+      "externalName": "DiaryCommunicationEvents",
+      "flags": 2,
+      "properties": [
+        {
+          "id": "1:7001250233303635349",
+          "name": "id",
+          "type": 6,
+          "flags": 1
+        },
+        {
+          "id": "2:8699104106900747841",
+          "name": "jobNumber",
+          "indexId": "11:2687293052742042383",
+          "type": 9,
+          "externalName": "job_number",
+          "flags": 2048
+        },
+        {
+          "id": "3:2220187038781481489",
+          "name": "linkedJobNumber",
+          "type": 9,
+          "externalName": "linked_job_number"
+        },
+        {
+          "id": "4:2285400950984052294",
+          "name": "userId",
+          "type": 9,
+          "externalName": "user_id"
+        },
+        {
+          "id": "5:1604737354496333491",
+          "name": "createdDate",
+          "type": 6,
+          "externalName": "created_date"
+        },
+        {
+          "id": "6:5788257535819609301",
+          "name": "deviceId",
+          "type": 9,
+          "externalName": "device_id"
+        },
+        {
+          "id": "7:2052823739613183558",
+          "name": "eventCode",
+          "type": 9,
+          "externalName": "event_code"
+        },
+        {
+          "id": "8:6605237218925521517",
+          "name": "additionalInfo",
+          "type": 9,
+          "externalName": "additional_info"
+        }
+      ],
+      "relations": []
+    },
+    {
+      "id": "14:3907677400186721447",
+      "lastPropertyId": "9:6008951981421650846",
+      "name": "GroupDetail",
+      "externalName": "GroupDetail",
+      "flags": 2,
+      "properties": [
+        {
+          "id": "1:7543603016000471076",
+          "name": "id",
+          "type": 6,
+          "flags": 1
+        },
+        {
+          "id": "2:6767474580333764939",
+          "name": "groupId",
+          "type": 9,
+          "externalName": "group_id"
+        },
+        {
+          "id": "3:4736875217195290707",
+          "name": "groupName",
+          "type": 9,
+          "externalName": "group_name"
+        },
+        {
+          "id": "4:3452356267142701723",
+          "name": "inId",
+          "type": 9,
+          "externalName": "in_id"
+        },
+        {
+          "id": "5:699275883195175405",
+          "name": "itemId",
+          "type": 9,
+          "externalName": "item_id"
+        },
+        {
+          "id": "6:2992333357747418366",
+          "name": "itemIdHash",
+          "type": 6,
+          "externalName": "item_id_hash"
+        },
+        {
+          "id": "7:800462924304561460",
+          "name": "photoIdentity",
+          "type": 9,
+          "externalName": "photo_identity"
+        },
+        {
+          "id": "8:2211967942960738762",
+          "name": "jobCode",
+          "indexId": "12:5237011458646343563",
+          "type": 9,
+          "externalName": "job_code",
+          "flags": 2048
+        },
+        {
+          "id": "9:6008951981421650846",
+          "name": "linkedJobNumber",
+          "type": 9,
+          "externalName": "linked_job_number"
+        }
+      ],
+      "relations": []
+    },
+    {
+      "id": "15:5445468560320380962",
+      "lastPropertyId": "16:221490985362252441",
+      "name": "ImageSync",
+      "externalName": "ImageSync",
+      "flags": 2,
+      "properties": [
+        {
+          "id": "1:5246471210638118992",
+          "name": "id",
+          "type": 6,
+          "flags": 1
+        },
+        {
+          "id": "2:6012742046390251046",
+          "name": "deviceId",
+          "type": 9,
+          "externalName": "device_id"
+        },
+        {
+          "id": "3:6373792495867808188",
+          "name": "createdDate",
+          "type": 6,
+          "externalName": "created_date"
+        },
+        {
+          "id": "4:4781324806598994591",
+          "name": "jobNumber",
+          "indexId": "13:3593638783958227814",
+          "type": 9,
+          "externalName": "jobNumber",
+          "flags": 2048
+        },
+        {
+          "id": "5:7963680001817072659",
+          "name": "photoIdentity",
+          "type": 9,
+          "externalName": "photo_identity"
+        },
+        {
+          "id": "6:5447292158432777356",
+          "name": "photoPath",
+          "type": 9,
+          "externalName": "photo_path"
+        },
+        {
+          "id": "7:2119337705438752043",
+          "name": "type",
+          "type": 9,
+          "externalName": "type"
+        },
+        {
+          "id": "8:899054989073829851",
+          "name": "typeIdentityId",
+          "type": 9,
+          "externalName": "type_identity_id"
+        },
+        {
+          "id": "9:8460122753516046238",
+          "name": "isPrimary",
+          "type": 1,
+          "externalName": "is_primary"
+        },
+        {
+          "id": "10:251546117382643740",
+          "name": "isSynced",
+          "type": 1,
+          "externalName": "is_synced"
+        },
+        {
+          "id": "11:1726922686090391686",
+          "name": "dateSynced",
+          "type": 6,
+          "externalName": "date_synced"
+        },
+        {
+          "id": "12:2436974620219131246",
+          "name": "userId",
+          "type": 9,
+          "externalName": "user_id"
+        },
+        {
+          "id": "13:1940899138150192824",
+          "name": "isAlreadySent",
+          "type": 1,
+          "externalName": "is_already_sent"
+        },
+        {
+          "id": "14:4498301806338135773",
+          "name": "isOriginal",
+          "type": 1,
+          "externalName": "is_original"
+        },
+        {
+          "id": "15:3578310539291062738",
+          "name": "syncState",
+          "type": 9,
+          "externalName": "sync_state"
+        },
+        {
+          "id": "16:221490985362252441",
+          "name": "linkedJobNumber",
+          "type": 9,
+          "externalName": "linked_job_number"
+        }
+      ],
+      "relations": []
+    },
+    {
+      "id": "16:2003670815091706088",
+      "lastPropertyId": "16:1355242643491334101",
+      "name": "ItemConditionDetail",
+      "externalName": "ItemConditionDetail",
+      "flags": 2,
+      "properties": [
+        {
+          "id": "1:882754924532368228",
+          "name": "id",
+          "type": 6,
+          "flags": 1
+        },
+        {
+          "id": "2:7918268799420989235",
+          "name": "itemConditionDetailId",
+          "type": 9,
+          "externalName": "item_condition_detail_id"
+        },
+        {
+          "id": "3:3478559424768056003",
+          "name": "itemId",
+          "type": 9,
+          "externalName": "item_id"
+        },
+        {
+          "id": "4:5781032782213428247",
+          "name": "photoIdentity",
+          "type": 9,
+          "externalName": "photo_identity"
+        },
+        {
+          "id": "5:3274109062377286763",
+          "name": "totalMarkups",
+          "type": 6,
+          "externalName": "total_markups"
+        },
+        {
+          "id": "6:5912721401541513778",
+          "name": "jobCode",
+          "indexId": "14:1930060382600659935",
+          "type": 9,
+          "externalName": "job_code",
+          "flags": 2048
+        },
+        {
+          "id": "7:5183363382583133306",
+          "name": "userId",
+          "type": 9,
+          "externalName": "user_id"
+        },
+        {
+          "id": "8:9042843780739278418",
+          "name": "createdDate",
+          "type": 6,
+          "externalName": "created_date"
+        },
+        {
+          "id": "9:1020060748987166405",
+          "name": "updatedDate",
+          "type": 6,
+          "externalName": "updated_date"
+        },
+        {
+          "id": "11:1580442081019886686",
+          "name": "conditionTypes",
+          "type": 30,
+          "externalName": "condition_types"
+        },
+        {
+          "id": "12:8196636738401178591",
+          "name": "deviceId",
+          "type": 9,
+          "externalName": "device_id"
+        },
+        {
+          "id": "13:335740933973685215",
+          "name": "originalPhotoIdentity",
+          "type": 9,
+          "externalName": "original_photo_identity"
+        },
+        {
+          "id": "14:6345594250370353030",
+          "name": "conditionPhotoType",
+          "type": 9,
+          "externalName": "condition_photo_type"
+        },
+        {
+          "id": "15:2688725547304145413",
+          "name": "linkedJobNumber",
+          "type": 9,
+          "externalName": "linked_job_number"
+        },
+        {
+          "id": "16:1355242643491334101",
+          "name": "markupDetail",
+          "type": 13,
+          "externalName": "markup_detail"
+        }
+      ],
+      "relations": []
+    },
+    {
+      "id": "17:73142642882287749",
+      "lastPropertyId": "3:2787255454919087680",
+      "name": "ItemDefectType",
+      "externalName": "ItemDefectType",
+      "flags": 2,
+      "properties": [
+        {
+          "id": "1:2791944862903858084",
+          "name": "id",
+          "type": 6,
+          "flags": 1
+        },
+        {
+          "id": "2:894159907218643327",
+          "name": "defectTypeId",
+          "type": 6,
+          "externalName": "defect_type_id"
+        },
+        {
+          "id": "3:2787255454919087680",
+          "name": "defectType",
+          "type": 9,
+          "externalName": "defect_type"
+        }
+      ],
+      "relations": []
+    },
+    {
+      "id": "18:3309614165015439624",
+      "lastPropertyId": "8:5407036936931085236",
+      "name": "ItemDeletionAudit",
+      "externalName": "ItemDeletionAudit",
+      "flags": 2,
+      "properties": [
+        {
+          "id": "1:510589939670023403",
+          "name": "id",
+          "type": 6,
+          "flags": 1
+        },
+        {
+          "id": "2:7973872865212540538",
+          "name": "itemInfo",
+          "type": 9,
+          "externalName": "item_info"
+        },
+        {
+          "id": "3:8283031652250889276",
+          "name": "reason",
+          "type": 9,
+          "externalName": "reason"
+        },
+        {
+          "id": "4:2125255029346406385",
+          "name": "deleteDate",
+          "type": 6,
+          "externalName": "delete_date"
+        },
+        {
+          "id": "5:5328444953686850985",
+          "name": "deleteBy",
+          "type": 9,
+          "externalName": "delete_by"
+        },
+        {
+          "id": "6:6957274827637795367",
+          "name": "deviceId",
+          "type": 9,
+          "externalName": "device_id"
+        },
+        {
+          "id": "7:2259700284904296062",
+          "name": "jobCode",
+          "indexId": "15:1612236440845758721",
+          "type": 9,
+          "externalName": "job_code",
+          "flags": 2048
+        },
+        {
+          "id": "8:5407036936931085236",
+          "name": "linkedJobNumber",
+          "type": 9,
+          "externalName": "linked_job_number"
+        }
+      ],
+      "relations": []
+    },
+    {
+      "id": "19:1180610911556075789",
+      "lastPropertyId": "52:8785221227653273433",
+      "name": "ItemInfo",
+      "externalName": "ItemInfo",
+      "flags": 2,
+      "properties": [
+        {
+          "id": "1:8251654115266361903",
+          "name": "id",
+          "type": 6,
+          "flags": 1
+        },
+        {
+          "id": "2:1016436352148086444",
+          "name": "itemId",
+          "type": 9,
+          "externalName": "item_id"
+        },
+        {
+          "id": "3:5691491037806048338",
+          "name": "itemIdHash",
+          "type": 6,
+          "externalName": "item_id_hash"
+        },
+        {
+          "id": "4:682013832871583694",
+          "name": "jobCode",
+          "type": 9,
+          "externalName": "job_code"
+        },
+        {
+          "id": "5:6277478805320780844",
+          "name": "photoIdentity",
+          "type": 9,
+          "externalName": "photo_identity"
+        },
+        {
+          "id": "6:492473200102590387",
+          "name": "s3Key",
+          "type": 9,
+          "externalName": "s3_key"
+        },
+        {
+          "id": "7:8790514081971964570",
+          "name": "description",
+          "type": 9,
+          "externalName": "description"
+        },
+        {
+          "id": "8:3666716309616605772",
+          "name": "artistDesc",
+          "type": 9,
+          "externalName": "artist"
+        },
+        {
+          "id": "9:8501766305084939129",
+          "name": "clientRefDesc",
+          "type": 9,
+          "externalName": "client_ref"
+        },
+        {
+          "id": "10:5239331602551141817",
+          "name": "projectNo",
+          "type": 9,
+          "externalName": "project_no"
+        },
+        {
+          "id": "11:1328713854813755786",
+          "name": "source",
+          "type": 9,
+          "externalName": "source"
+        },
+        {
+          "id": "12:8690908646549144094",
+          "name": "sidemark",
+          "type": 9,
+          "externalName": "sidemark"
+        },
+        {
+          "id": "13:3339958232525510753",
+          "name": "medium",
+          "type": 9,
+          "externalName": "material"
+        },
+        {
+          "id": "14:4629477392791541797",
+          "name": "length",
+          "type": 8,
+          "externalName": "length"
+        },
+        {
+          "id": "15:7776987936328458990",
+          "name": "width",
+          "type": 8,
+          "externalName": "width"
+        },
+        {
+          "id": "16:7103223638153012143",
+          "name": "weight",
+          "type": 8,
+          "externalName": "weight"
+        },
+        {
+          "id": "17:1940945856456598638",
+          "name": "height",
+          "type": 8,
+          "externalName": "height"
+        },
+        {
+          "id": "18:7853293759844985008",
+          "name": "conditionState",
+          "type": 30,
+          "externalName": "condition_state"
+        },
+        {
+          "id": "19:946139408918870111",
+          "name": "conditionPhoto",
+          "type": 30,
+          "externalName": "condition_photo"
+        },
+        {
+          "id": "20:5276906341346728406",
+          "name": "spaceId",
+          "type": 9,
+          "externalName": "space_id"
+        },
+        {
+          "id": "21:3072892155792925387",
+          "name": "cartonId",
+          "type": 9,
+          "externalName": "carton_id"
+        },
+        {
+          "id": "22:2752319243125628811",
+          "name": "userId",
+          "type": 9,
+          "externalName": "user_id"
+        },
+        {
+          "id": "23:2643961420790139510",
+          "name": "createdDate",
+          "type": 6,
+          "externalName": "created_date"
+        },
+        {
+          "id": "24:4760232493987278549",
+          "name": "updatedDate",
+          "type": 6,
+          "externalName": "updated_date"
+        },
+        {
+          "id": "25:794358918354181046",
+          "name": "lifecycleState",
+          "type": 9,
+          "externalName": "lifecycle_state"
+        },
+        {
+          "id": "26:1660584345041344832",
+          "name": "packDate",
+          "type": 6,
+          "externalName": "pack_date"
+        },
+        {
+          "id": "27:3927588463792089144",
+          "name": "offLoadDate",
+          "type": 6,
+          "externalName": "offload_date"
+        },
+        {
+          "id": "28:1198784451447443584",
+          "name": "partialPackDate",
+          "type": 6,
+          "externalName": "partial_pack_date"
+        },
+        {
+          "id": "29:902685080851915471",
+          "name": "deviceId",
+          "type": 9,
+          "externalName": "device_id"
+        },
+        {
+          "id": "30:5533675302587562982",
+          "name": "descriptionGeneratedBy",
+          "type": 9,
+          "externalName": "description_generated_by"
+        },
+        {
+          "id": "31:3936768976870594670",
+          "name": "value",
+          "type": 8,
+          "externalName": "value"
+        },
+        {
+          "id": "32:2368090869082540988",
+          "name": "currencyType",
+          "type": 9,
+          "externalName": "currency_type"
+        },
+        {
+          "id": "33:3588875038112930751",
+          "name": "photoVersion",
+          "type": 6,
+          "externalName": "photo_version"
+        },
+        {
+          "id": "34:3867766193930454471",
+          "name": "isNoPhotoItem",
+          "type": 1,
+          "externalName": "is_no_photo_item"
+        },
+        {
+          "id": "35:2499208002674617098",
+          "name": "originalDescription",
+          "type": 9,
+          "externalName": "original_description"
+        },
+        {
+          "id": "36:5531091763627720276",
+          "name": "deliveryConditionState",
+          "type": 30,
+          "externalName": "delivery_condition_state"
+        },
+        {
+          "id": "37:18004496485640694",
+          "name": "notes",
+          "type": 9,
+          "externalName": "notes"
+        },
+        {
+          "id": "38:6401841200598608877",
+          "name": "notesAddedBy",
+          "type": 9,
+          "externalName": "notes_added_by"
+        },
+        {
+          "id": "39:7750507064226177945",
+          "name": "notesUpdatedDate",
+          "type": 6,
+          "externalName": "notes_updated_date"
+        },
+        {
+          "id": "40:8469510784210985983",
+          "name": "residentialItemType",
+          "type": 9,
+          "externalName": "residential_item_type"
+        },
+        {
+          "id": "41:3824804971612675499",
+          "name": "objectRef",
+          "type": 9,
+          "externalName": "object_ref"
+        },
+        {
+          "id": "42:8821625327228586468",
+          "name": "movewareCategory",
+          "type": 9,
+          "externalName": "moveware_category"
+        },
+        {
+          "id": "43:6514339312156809602",
+          "name": "specialHandlingRequiredTypes",
+          "type": 30,
+          "externalName": "special_handling_required_types"
+        },
+        {
+          "id": "44:8793179301519497033",
+          "name": "specialHandlingRequiredNote",
+          "type": 9,
+          "externalName": "special_handling_required_note"
+        },
+        {
+          "id": "45:3825474756042419409",
+          "name": "longDescription",
+          "type": 9,
+          "externalName": "long_description"
+        },
+        {
+          "id": "46:8104836659188461106",
+          "name": "longDescriptionGeneratedBy",
+          "type": 9,
+          "externalName": "long_description_generated_by"
+        },
+        {
+          "id": "47:3487496269968478588",
+          "name": "lengthInInch",
+          "type": 8,
+          "externalName": "length_in_inch"
+        },
+        {
+          "id": "48:770604896141858415",
+          "name": "widthInInch",
+          "type": 8,
+          "externalName": "width_in_inch"
+        },
+        {
+          "id": "49:3444731831532568961",
+          "name": "heightInInch",
+          "type": 8,
+          "externalName": "height_in_inch"
+        },
+        {
+          "id": "50:1916847721102897085",
+          "name": "weightInPound",
+          "type": 8,
+          "externalName": "weight_in_pound"
+        },
+        {
+          "id": "51:8664354843071802723",
+          "name": "isFrame",
+          "type": 1,
+          "externalName": "is_frame"
+        },
+        {
+          "id": "52:8785221227653273433",
+          "name": "linkedJobNumber",
+          "type": 9,
+          "externalName": "linked_job_number"
+        }
+      ],
+      "relations": []
+    },
+    {
+      "id": "20:5959172243853696097",
+      "lastPropertyId": "6:6892141678656239372",
+      "name": "JobAdditionalInfo",
+      "externalName": "JobAdditionalInfo",
+      "flags": 2,
+      "properties": [
+        {
+          "id": "1:2843358962322638743",
+          "name": "id",
+          "type": 6,
+          "flags": 1
+        },
+        {
+          "id": "2:3843259194411926392",
+          "name": "jobCode",
+          "indexId": "16:5083247696062820540",
+          "type": 9,
+          "externalName": "job_code",
+          "flags": 2048
+        },
+        {
+          "id": "4:4344344068027506307",
+          "name": "lastUpdatedDate",
+          "type": 6,
+          "externalName": "last_updated_date"
+        },
+        {
+          "id": "5:4310739764579099223",
+          "name": "linkedJobNumber",
+          "type": 9,
+          "externalName": "linked_job_number"
+        },
+        {
+          "id": "6:6892141678656239372",
+          "name": "riskAssessments",
+          "type": 13,
+          "externalName": "risk_assessments"
+        }
+      ],
+      "relations": []
+    },
+    {
+      "id": "21:3284720349279323191",
+      "lastPropertyId": "12:331681167521197383",
+      "name": "JobCrew",
+      "externalName": "JobCrew",
+      "flags": 2,
+      "properties": [
+        {
+          "id": "1:8018486685790222347",
+          "name": "id",
+          "type": 6,
+          "flags": 1
+        },
+        {
+          "id": "2:4042629233070608630",
+          "name": "userId",
+          "type": 9,
+          "externalName": "user_id"
+        },
+        {
+          "id": "3:334629080497324954",
+          "name": "userType",
+          "type": 6,
+          "externalName": "user_type"
+        },
+        {
+          "id": "4:1181065120520000049",
+          "name": "jobCode",
+          "indexId": "17:2259388343601521778",
+          "type": 9,
+          "externalName": "job_code",
+          "flags": 2048
+        },
+        {
+          "id": "5:3899979019385619158",
+          "name": "isManual",
+          "type": 1,
+          "externalName": "is_manual"
+        },
+        {
+          "id": "6:8506052420790213026",
+          "name": "lastActiveDate",
+          "type": 6,
+          "externalName": "last_active_date"
+        },
+        {
+          "id": "7:7816941593229549773",
+          "name": "createdDate",
+          "type": 6,
+          "externalName": "created_date"
+        },
+        {
+          "id": "8:4672106032608299417",
+          "name": "updatedDate",
+          "type": 6,
+          "externalName": "updated_date"
+        },
+        {
+          "id": "9:3622887373089028621",
+          "name": "isSupervisor",
+          "type": 1,
+          "externalName": "is_supervisor"
+        },
+        {
+          "id": "10:6077718142496218883",
+          "name": "jobStatus",
+          "type": 6,
+          "externalName": "job_status"
+        },
+        {
+          "id": "11:8854531438536629327",
+          "name": "deviceId",
+          "type": 9,
+          "externalName": "device_id"
+        },
+        {
+          "id": "12:331681167521197383",
+          "name": "linkedJobNumber",
+          "type": 9,
+          "externalName": "linked_job_number"
+        }
+      ],
+      "relations": []
+    },
+    {
+      "id": "22:3901987626777590827",
+      "lastPropertyId": "9:4292648593385432933",
+      "name": "JobDetailStatus",
+      "externalName": "JobDetailStatus",
+      "flags": 2,
+      "properties": [
+        {
+          "id": "1:7512062907694237180",
+          "name": "id",
+          "type": 6,
+          "flags": 1
+        },
+        {
+          "id": "2:2410607757672145581",
+          "name": "propertyTypeId",
+          "type": 6,
+          "externalName": "property_type_id"
+        },
+        {
+          "id": "3:1368109953374835989",
+          "name": "jobCode",
+          "type": 9,
+          "externalName": "job_code"
+        },
+        {
+          "id": "4:8142286654245899535",
+          "name": "updatedDate",
+          "type": 6,
+          "externalName": "updated_date"
+        },
+        {
+          "id": "5:4534006831120335395",
+          "name": "jobStatus",
+          "type": 6,
+          "externalName": "job_status"
+        },
+        {
+          "id": "6:262880992243153593",
+          "name": "deviceId",
+          "type": 9,
+          "externalName": "device_id"
+        },
+        {
+          "id": "7:6256908646016297880",
+          "name": "createdDate",
+          "type": 6,
+          "externalName": "created_date"
+        },
+        {
+          "id": "8:1964927134939530774",
+          "name": "userId",
+          "type": 9,
+          "externalName": "user_id"
+        },
+        {
+          "id": "9:4292648593385432933",
+          "name": "linkedJobNumber",
+          "type": 9,
+          "externalName": "linked_job_number"
+        }
+      ],
+      "relations": []
+    },
+    {
+      "id": "23:4795511005089559410",
+      "lastPropertyId": "20:5046877999830736778",
+      "name": "JobMoveCode",
+      "externalName": "JobMoveCode",
+      "flags": 2,
+      "properties": [
+        {
+          "id": "1:6090956006897234107",
+          "name": "id",
+          "type": 6,
+          "flags": 1
+        },
+        {
+          "id": "2:2476345016661469450",
+          "name": "moveCode",
+          "type": 9,
+          "externalName": "move_code"
+        },
+        {
+          "id": "3:8461118794450612016",
+          "name": "jobType",
+          "type": 9,
+          "externalName": "job_type"
+        },
+        {
+          "id": "4:1945801866811029941",
+          "name": "addSpaceBtnColor",
+          "type": 9,
+          "externalName": "add_space_btn_color"
+        },
+        {
+          "id": "5:4885344992128647288",
+          "name": "viewEditContentBtnColor",
+          "type": 9,
+          "externalName": "view_edit_content_btn_color"
+        },
+        {
+          "id": "6:4543779886547384393",
+          "name": "unpackItemsBtnColor",
+          "type": 9,
+          "externalName": "unpack_items_btn_color"
+        },
+        {
+          "id": "7:2385215534367463188",
+          "name": "fastUnpackBtnColor",
+          "type": 9,
+          "externalName": "fast_unpack_btn_color"
+        },
+        {
+          "id": "8:7904043522301449051",
+          "name": "loadContainerBtnColor",
+          "type": 9,
+          "externalName": "load_container_btn_color"
+        },
+        {
+          "id": "9:3254710215537196773",
+          "name": "unloadContainerBtnColor",
+          "type": 9,
+          "externalName": "unload_container_btn_color"
+        },
+        {
+          "id": "10:7388671350616251076",
+          "name": "isContainersVisible",
+          "type": 1,
+          "externalName": "is_containers_visible"
+        },
+        {
+          "id": "11:8125071723499016756",
+          "name": "isJobReviewVisible",
+          "type": 1,
+          "externalName": "is_job_review_visible"
+        },
+        {
+          "id": "12:9101772360608842355",
+          "name": "isInstallationSummaryVisible",
+          "type": 1,
+          "externalName": "is_installation_summary_visible"
+        },
+        {
+          "id": "13:3036948402890072475",
+          "name": "isWareHouseReviewVisible",
+          "type": 1,
+          "externalName": "is_ware_house_review_visible"
+        },
+        {
+          "id": "14:985039878541583008",
+          "name": "isCartonTypeVisible",
+          "type": 1,
+          "externalName": "is_carton_type_visible"
+        },
+        {
+          "id": "15:3817499030285768686",
+          "name": "deleteItemAtViewEdit",
+          "type": 1,
+          "externalName": "delete_item_at_view_edit"
+        },
+        {
+          "id": "16:2258363727418204298",
+          "name": "deleteItemAtPacking",
+          "type": 1,
+          "externalName": "delete_item_at_packing"
+        },
+        {
+          "id": "17:8881342580500067716",
+          "name": "deleteItemAtUnpacking",
+          "type": 1,
+          "externalName": "delete_item_at_unpacking"
+        },
+        {
+          "id": "18:2091690173238313761",
+          "name": "deleteSpace",
+          "type": 1,
+          "externalName": "delete_space"
+        },
+        {
+          "id": "19:4619342710257061916",
+          "name": "collectionSummaryBtnColor",
+          "type": 9,
+          "externalName": "collection_summary_btn_color"
+        },
+        {
+          "id": "20:5046877999830736778",
+          "name": "installationSummaryBtnColor",
+          "type": 9,
+          "externalName": "installation_summary_btn_color"
+        }
+      ],
+      "relations": []
+    },
+    {
+      "id": "24:717713147530170006",
+      "lastPropertyId": "13:849835726272880179",
+      "name": "JobOperationsDebrief",
+      "externalName": "JobOperationsDebrief",
+      "flags": 2,
+      "properties": [
+        {
+          "id": "1:1728619513798674265",
+          "name": "id",
+          "type": 6,
+          "flags": 1
+        },
+        {
+          "id": "2:5443453135591970582",
+          "name": "jobReviewId",
+          "type": 9,
+          "externalName": "unique_id"
+        },
+        {
+          "id": "3:384325388952224443",
+          "name": "jobNumber",
+          "indexId": "18:5677959146595054550",
+          "type": 9,
+          "externalName": "job_number",
+          "flags": 2048
+        },
+        {
+          "id": "4:5142995551977889380",
+          "name": "linkedJobNumber",
+          "type": 9,
+          "externalName": "linked_job_number"
+        },
+        {
+          "id": "5:2179689218742505395",
+          "name": "day",
+          "type": 6,
+          "externalName": "day"
+        },
+        {
+          "id": "6:2295762349940854100",
+          "name": "jodVehicles",
+          "type": 9,
+          "externalName": "jod_vehicles"
+        },
+        {
+          "id": "7:5769292314211603799",
+          "name": "jodCrewSupervisor",
+          "type": 9,
+          "externalName": "jod_crew_supervisor"
+        },
+        {
+          "id": "8:8664143019480309925",
+          "name": "jodCrewMembers",
+          "type": 9,
+          "externalName": "jod_crew_members"
+        },
+        {
+          "id": "9:4929715736664916107",
+          "name": "jodDate",
+          "type": 6,
+          "externalName": "jod_date"
+        },
+        {
+          "id": "10:4206195523028500881",
+          "name": "jodArrivalTime",
+          "type": 6,
+          "externalName": "jod_arrival_time"
+        },
+        {
+          "id": "11:8671012779825843473",
+          "name": "jodDepartureTime",
+          "type": 6,
+          "externalName": "jod_departure_time"
+        },
+        {
+          "id": "12:7746968211876421104",
+          "name": "jodNotesAboutIssue",
+          "type": 9,
+          "externalName": "jod_issue_notes"
+        },
+        {
+          "id": "13:849835726272880179",
+          "name": "job_reviewId",
+          "indexId": "1:4877171767840628870",
+          "type": 11,
+          "flags": 520,
+          "relationTarget": "JobReviewInfo"
+        }
+      ],
+      "relations": []
+    },
+    {
+      "id": "25:6390813307546838228",
+      "lastPropertyId": "66:3057173093245310205",
+      "name": "JobReviewInfo",
+      "externalName": "JobReviewInfo",
+      "flags": 2,
+      "properties": [
+        {
+          "id": "1:7885684024709031410",
+          "name": "id",
+          "type": 6,
+          "flags": 1
+        },
+        {
+          "id": "2:3413044812129768639",
+          "name": "createdDate",
+          "type": 6,
+          "externalName": "created_date"
+        },
+        {
+          "id": "3:2986354605525661540",
+          "name": "jobReviewId",
+          "type": 9,
+          "externalName": "unique_id"
+        },
+        {
+          "id": "4:6475617816585548147",
+          "name": "jobNumber",
+          "indexId": "19:3969505791591818891",
+          "type": 9,
+          "externalName": "job_number",
+          "flags": 2048
+        },
+        {
+          "id": "5:8867555206750140994",
+          "name": "linkedJobNumber",
+          "type": 9,
+          "externalName": "linked_job_number"
+        },
+        {
+          "id": "6:8783587267521641961",
+          "name": "jobName",
+          "type": 9,
+          "externalName": "job_name"
+        },
+        {
+          "id": "7:1093518660553931118",
+          "name": "collectFromAddress",
+          "type": 9,
+          "externalName": "collect_from_address"
+        },
+        {
+          "id": "8:5462350404187969838",
+          "name": "deliverToAddress",
+          "type": 9,
+          "externalName": "deliver_to_address"
+        },
+        {
+          "id": "9:2661237778858163336",
+          "name": "crewLead",
+          "type": 9,
+          "externalName": "crew_lead"
+        },
+        {
+          "id": "10:3134689637167020176",
+          "name": "userId",
+          "type": 9,
+          "externalName": "user_id"
+        },
+        {
+          "id": "11:7108929049386313348",
+          "name": "deviceId",
+          "type": 9,
+          "externalName": "device_id"
+        },
+        {
+          "id": "12:845365241292761746",
+          "name": "oweAdded",
+          "type": 1,
+          "externalName": "owe_added"
+        },
+        {
+          "id": "13:7988724073541159754",
+          "name": "oweCost",
+          "type": 9,
+          "externalName": "owe_cost"
+        },
+        {
+          "id": "14:664124974748941818",
+          "name": "currencyType",
+          "type": 9,
+          "externalName": "owe_currency_type"
+        },
+        {
+          "id": "15:8763894630654689181",
+          "name": "oweClientName",
+          "type": 9,
+          "externalName": "owe_client_name"
+        },
+        {
+          "id": "16:8687552696702113671",
+          "name": "oweDescription",
+          "type": 9,
+          "externalName": "owe_description"
+        },
+        {
+          "id": "17:3822757868753953784",
+          "name": "ragAdded",
+          "type": 1,
+          "externalName": "rag_added"
+        },
+        {
+          "id": "18:8798893493980633501",
+          "name": "ragDescription",
+          "type": 9,
+          "externalName": "rag_description"
+        },
+        {
+          "id": "19:5769228712577537940",
+          "name": "iwuAdded",
+          "type": 1,
+          "externalName": "iwu_added"
+        },
+        {
+          "id": "20:2905122463779224862",
+          "name": "iwuDescription",
+          "type": 9,
+          "externalName": "iwu_description"
+        },
+        {
+          "id": "21:833834925697729765",
+          "name": "actNotes",
+          "type": 9,
+          "externalName": "act_notes"
+        },
+        {
+          "id": "22:6642821279213219753",
+          "name": "isACTSelected",
+          "type": 1,
+          "externalName": "is_act_selected"
+        },
+        {
+          "id": "23:6054188336704860980",
+          "name": "crcNotes",
+          "type": 9,
+          "externalName": "crc_notes"
+        },
+        {
+          "id": "24:357545103168598213",
+          "name": "isCRCSelected",
+          "type": 1,
+          "externalName": "is_crc_selected"
+        },
+        {
+          "id": "25:7007276943486615956",
+          "name": "crdNotes",
+          "type": 9,
+          "externalName": "crd_notes"
+        },
+        {
+          "id": "26:6392217274778343015",
+          "name": "isCRDSelected",
+          "type": 1,
+          "externalName": "is_crd_selected"
+        },
+        {
+          "id": "27:6753886148786033745",
+          "name": "finalInspectionNotes",
+          "type": 9,
+          "externalName": "final_inspection_notes"
+        },
+        {
+          "id": "28:1446528558853707318",
+          "name": "supervisorSignatureIdentity",
+          "type": 9,
+          "externalName": "supervisor_signature_identity"
+        },
+        {
+          "id": "29:1792841858946799516",
+          "name": "supervisorSignatureName",
+          "type": 9,
+          "externalName": "supervisor_signature_name"
+        },
+        {
+          "id": "30:685213884680495877",
+          "name": "supervisorSignatureDate",
+          "type": 6,
+          "externalName": "supervisor_signature_date"
+        },
+        {
+          "id": "31:1842879478507273081",
+          "name": "satisfiedWorkNotes",
+          "type": 9,
+          "externalName": "satisfied_work_notes"
+        },
+        {
+          "id": "32:1877292189537284017",
+          "name": "clientSignatureIdentity",
+          "type": 9,
+          "externalName": "client_signature_identity"
+        },
+        {
+          "id": "33:5950191172733918779",
+          "name": "clientSignatureName",
+          "type": 9,
+          "externalName": "client_signature_name"
+        },
+        {
+          "id": "34:1443397468943566184",
+          "name": "clientSignatureDate",
+          "type": 6,
+          "externalName": "client_signature_date"
+        },
+        {
+          "id": "35:1309002288436910298",
+          "name": "jorEstimatedVol",
+          "type": 9,
+          "externalName": "jor_estimated_vol"
+        },
+        {
+          "id": "36:298011753937167721",
+          "name": "jorActualVol",
+          "type": 9,
+          "externalName": "jor_actual_vol"
+        },
+        {
+          "id": "37:3420089075934257308",
+          "name": "invExceptions",
+          "type": 1,
+          "externalName": "inv_exceptions"
+        },
+        {
+          "id": "38:1717659586050201339",
+          "name": "invImages",
+          "type": 1,
+          "externalName": "inv_images"
+        },
+        {
+          "id": "39:1219313684566692742",
+          "name": "invSynced",
+          "type": 1,
+          "externalName": "inv_synced"
+        },
+        {
+          "id": "40:2477935077848457369",
+          "name": "invNotes",
+          "type": 9,
+          "externalName": "inv_notes"
+        },
+        {
+          "id": "41:1202409504191240329",
+          "name": "shipPieceCount",
+          "type": 1,
+          "externalName": "ship_piece_count"
+        },
+        {
+          "id": "42:6479641466843810123",
+          "name": "shipContainerNumber",
+          "type": 1,
+          "externalName": "ship_container_number"
+        },
+        {
+          "id": "43:2312213389437328718",
+          "name": "shipLastLabelNumber",
+          "type": 1,
+          "externalName": "ship_last_label_number"
+        },
+        {
+          "id": "44:4621845373449919390",
+          "name": "shipGelUsed",
+          "type": 1,
+          "externalName": "ship_gel_used"
+        },
+        {
+          "id": "45:2056310779308438000",
+          "name": "shipInvChecked",
+          "type": 1,
+          "externalName": "ship_inv_checked"
+        },
+        {
+          "id": "46:3631462020397845047",
+          "name": "shipNotes",
+          "type": 9,
+          "externalName": "ship_notes"
+        },
+        {
+          "id": "47:430030853538199055",
+          "name": "storageContOnWarehouse",
+          "type": 1,
+          "externalName": "storage_cont_on_warehouse"
+        },
+        {
+          "id": "48:3114273835850712245",
+          "name": "storageContOnSite",
+          "type": 1,
+          "externalName": "storage_cont_on_site"
+        },
+        {
+          "id": "49:3133520631039755591",
+          "name": "storageNotes",
+          "type": 9,
+          "externalName": "storage_notes"
+        },
+        {
+          "id": "50:983142771534223186",
+          "name": "accessParkingTickets",
+          "type": 1,
+          "externalName": "access_parking_tickets"
+        },
+        {
+          "id": "51:6677917783658801886",
+          "name": "accessNotes",
+          "type": 9,
+          "externalName": "access_notes"
+        },
+        {
+          "id": "52:4760269009696078276",
+          "name": "damagesClaims",
+          "type": 1,
+          "externalName": "damages_claims"
+        },
+        {
+          "id": "53:1915225289483379750",
+          "name": "damagesPhotos",
+          "type": 1,
+          "externalName": "damages_photos"
+        },
+        {
+          "id": "54:2960850258615217317",
+          "name": "damagesNotes",
+          "type": 9,
+          "externalName": "damages_notes"
+        },
+        {
+          "id": "55:4843650490396660481",
+          "name": "dismantledItemNotes",
+          "type": 9,
+          "externalName": "dismantled_item_notes"
+        },
+        {
+          "id": "56:7938891186162038686",
+          "name": "reassembledItemNotes",
+          "type": 9,
+          "externalName": "reassembled_item_notes"
+        },
+        {
+          "id": "57:7333331650828632448",
+          "name": "bitsBoxInvCompleted",
+          "type": 1,
+          "externalName": "bits_box_inv_completed"
+        },
+        {
+          "id": "58:5489081363094095944",
+          "name": "riskAssessmentHeavyAwkwardItems",
+          "type": 1,
+          "externalName": "risk_heavy_awkward_items"
+        },
+        {
+          "id": "59:2961665936135527403",
+          "name": "riskAssessmentOfficeContacted",
+          "type": 1,
+          "externalName": "risk_office_contacted"
+        },
+        {
+          "id": "60:6488506772914454746",
+          "name": "riskAssessmentReceivedAuthorisation",
+          "type": 1,
+          "externalName": "risk_received_authorisation"
+        },
+        {
+          "id": "61:6570303897568697752",
+          "name": "riskAssessmentNotes",
+          "type": 9,
+          "externalName": "risk_assessment_notes"
+        },
+        {
+          "id": "62:7874770790225921910",
+          "name": "riskAllExceptionNoted",
+          "type": 1,
+          "externalName": "risk_all_exception_noted"
+        },
+        {
+          "id": "63:5736492182508136063",
+          "name": "updatedDate",
+          "type": 6,
+          "externalName": "updated_date"
+        },
+        {
+          "id": "65:6835459014446611118",
+          "name": "jobReviewCompleted",
+          "type": 1,
+          "externalName": "job_review_completed"
+        },
+        {
+          "id": "66:3057173093245310205",
+          "name": "amendmentHistoryList",
+          "type": 13,
+          "externalName": "amendment_history"
+        }
+      ],
+      "relations": [
+        {
+          "id": "3:7548103159776366600",
+          "name": "jobOperationsDebriefList",
+          "externalName": "job_operation_debrief",
+          "targetId": "24:717713147530170006"
+        },
+        {
+          "id": "4:1122478176411906755",
+          "name": "storageLocationDetailsList",
+          "externalName": "storage_location_details",
+          "targetId": "43:5185955849411805487"
+        }
+      ]
+    },
+    {
+      "id": "26:4297081148300069370",
+      "lastPropertyId": "7:2999548754712391705",
+      "name": "JobStatus",
+      "externalName": "JobStatus",
+      "flags": 2,
+      "properties": [
+        {
+          "id": "1:8746000428650275428",
+          "name": "id",
+          "type": 6,
+          "flags": 1
+        },
+        {
+          "id": "2:2543772439499304145",
+          "name": "statusId",
+          "type": 6,
+          "externalName": "status_id"
+        },
+        {
+          "id": "3:8753092960686963680",
+          "name": "statusName",
+          "type": 9,
+          "externalName": "status_name"
+        },
+        {
+          "id": "4:2419226771555217453",
+          "name": "bgColor",
+          "type": 9,
+          "externalName": "bg_color"
+        },
+        {
+          "id": "5:6222858301924090210",
+          "name": "textColor",
+          "type": 9,
+          "externalName": "text_color"
+        },
+        {
+          "id": "6:3884976626446862208",
+          "name": "lightThemeBgColor",
+          "type": 9,
+          "externalName": "light_theme_bg_color"
+        },
+        {
+          "id": "7:2999548754712391705",
+          "name": "lightThemeTextColor",
+          "type": 9,
+          "externalName": "light_theme_text_color"
+        }
+      ],
+      "relations": []
+    },
+    {
+      "id": "27:4231921004056361644",
+      "lastPropertyId": "17:3030560958032192464",
+      "name": "LinkCartonItem",
+      "externalName": "LinkCartonItem",
+      "flags": 2,
+      "properties": [
+        {
+          "id": "1:5241287762311380989",
+          "name": "id",
+          "type": 6,
+          "flags": 1
+        },
+        {
+          "id": "2:3864904132675041839",
+          "name": "jobCode",
+          "type": 9,
+          "externalName": "job_code"
+        },
+        {
+          "id": "3:8839453955659509309",
+          "name": "cartonCode",
+          "type": 9,
+          "externalName": "carton_code"
+        },
+        {
+          "id": "4:5992434853221281671",
+          "name": "cartonId",
+          "type": 9,
+          "externalName": "carton_id"
+        },
+        {
+          "id": "5:7372981181246107477",
+          "name": "itemId",
+          "type": 9,
+          "externalName": "item_id"
+        },
+        {
+          "id": "6:2508481327517782309",
+          "name": "itemIdHash",
+          "type": 6,
+          "externalName": "item_id_hash"
+        },
+        {
+          "id": "7:5942132866157196189",
+          "name": "userId",
+          "type": 9,
+          "externalName": "user_id"
+        },
+        {
+          "id": "8:7012448788226675005",
+          "name": "spaceId",
+          "type": 9,
+          "externalName": "space_id"
+        },
+        {
+          "id": "9:2980298221375180726",
+          "name": "createdDate",
+          "type": 6,
+          "externalName": "created_date"
+        },
+        {
+          "id": "10:2722440624563493652",
+          "name": "lifecycleState",
+          "type": 9,
+          "externalName": "lifecycle_state"
+        },
+        {
+          "id": "11:168400053869071820",
+          "name": "packDate",
+          "type": 6,
+          "externalName": "pack_date"
+        },
+        {
+          "id": "12:1790360071748532531",
+          "name": "offLoadDate",
+          "type": 6,
+          "externalName": "offload_date"
+        },
+        {
+          "id": "13:2051216845012009582",
+          "name": "partialPackDate",
+          "type": 6,
+          "externalName": "partial_pack_date"
+        },
+        {
+          "id": "14:7590134899182295820",
+          "name": "deviceId",
+          "type": 9,
+          "externalName": "device_id"
+        },
+        {
+          "id": "15:6921896244821921396",
+          "name": "unpackJobCode",
+          "type": 9,
+          "externalName": "unpack_job_code"
+        },
+        {
+          "id": "16:7809821771025778617",
+          "name": "movewareCategory",
+          "type": 9,
+          "externalName": "moveware_category"
+        },
+        {
+          "id": "17:3030560958032192464",
+          "name": "linkedJobNumber",
+          "type": 9,
+          "externalName": "linked_job_number"
+        }
+      ],
+      "relations": []
+    },
+    {
+      "id": "28:5442914875306593846",
+      "lastPropertyId": "12:1867301326023763085",
+      "name": "LinkCartonSpace",
+      "externalName": "LinkCartonSpace",
+      "flags": 2,
+      "properties": [
+        {
+          "id": "1:7692831206798877465",
+          "name": "id",
+          "type": 6,
+          "flags": 1
+        },
+        {
+          "id": "2:7243470589203435893",
+          "name": "jobCode",
+          "indexId": "20:4840263724822272813",
+          "type": 9,
+          "externalName": "job_code",
+          "flags": 2048
+        },
+        {
+          "id": "3:5778431548785670766",
+          "name": "cartonCode",
+          "type": 9,
+          "externalName": "carton_code"
+        },
+        {
+          "id": "4:7740675182776325146",
+          "name": "cartonId",
+          "type": 9,
+          "externalName": "carton_id"
+        },
+        {
+          "id": "5:2263002901175860106",
+          "name": "spaceId",
+          "type": 9,
+          "externalName": "space_id"
+        },
+        {
+          "id": "6:4054021628148123221",
+          "name": "lifecycleState",
+          "type": 9,
+          "externalName": "lifecycle_state"
+        },
+        {
+          "id": "7:7593640742925921056",
+          "name": "packDate",
+          "type": 6,
+          "externalName": "pack_date"
+        },
+        {
+          "id": "8:8001306771914862798",
+          "name": "offLoadDate",
+          "type": 6,
+          "externalName": "offload_date"
+        },
+        {
+          "id": "9:6430636386709243254",
+          "name": "partialPackDate",
+          "type": 6,
+          "externalName": "partial_pack_date"
+        },
+        {
+          "id": "10:8800693382466769189",
+          "name": "userId",
+          "type": 9,
+          "externalName": "user_id"
+        },
+        {
+          "id": "11:4843372239963775611",
+          "name": "deviceId",
+          "type": 9,
+          "externalName": "device_id"
+        },
+        {
+          "id": "12:1867301326023763085",
+          "name": "linkedJobNumber",
+          "type": 9,
+          "externalName": "linked_job_number"
+        }
+      ],
+      "relations": []
+    },
+    {
+      "id": "29:760855023568283988",
+      "lastPropertyId": "17:572119857918671856",
+      "name": "LinkContainerCarton",
+      "externalName": "LinkContainerCarton",
+      "flags": 2,
+      "properties": [
+        {
+          "id": "1:5297996333035181930",
+          "name": "id",
+          "type": 6,
+          "flags": 1
+        },
+        {
+          "id": "2:1152269982429705761",
+          "name": "containerId",
+          "type": 9,
+          "externalName": "container_id"
+        },
+        {
+          "id": "3:8970425423045172228",
+          "name": "containerCode",
+          "type": 9,
+          "externalName": "container_code"
+        },
+        {
+          "id": "4:2122973981089463465",
+          "name": "cartonCode",
+          "type": 9,
+          "externalName": "carton_code"
+        },
+        {
+          "id": "5:5216598298253839183",
+          "name": "jobCode",
+          "indexId": "21:8696583216859395853",
+          "type": 9,
+          "externalName": "job_code",
+          "flags": 2048
+        },
+        {
+          "id": "6:4620149540897673744",
+          "name": "userId",
+          "type": 9,
+          "externalName": "user_id"
+        },
+        {
+          "id": "7:277223265848724508",
+          "name": "createdDate",
+          "type": 6,
+          "externalName": "created_date"
+        },
+        {
+          "id": "8:8787735946658060302",
+          "name": "updatedDate",
+          "type": 6,
+          "externalName": "updated_date"
+        },
+        {
+          "id": "9:809907785604425718",
+          "name": "lifecycleState",
+          "type": 9,
+          "externalName": "lifecycle_state"
+        },
+        {
+          "id": "10:3611593661462186880",
+          "name": "packDate",
+          "type": 6,
+          "externalName": "pack_date"
+        },
+        {
+          "id": "11:5526540941234232965",
+          "name": "offLoadDate",
+          "type": 6,
+          "externalName": "offload_date"
+        },
+        {
+          "id": "12:4027665588293871982",
+          "name": "partialPackDate",
+          "type": 6,
+          "externalName": "partial_pack_date"
+        },
+        {
+          "id": "13:6018699976394106957",
+          "name": "deviceId",
+          "type": 9,
+          "externalName": "device_id"
+        },
+        {
+          "id": "14:7232737148946577587",
+          "name": "loadJobCode",
+          "indexId": "22:6626047680159841203",
+          "type": 9,
+          "externalName": "load_job_code",
+          "flags": 2048
+        },
+        {
+          "id": "15:250506923181699125",
+          "name": "movewareCategory",
+          "type": 9,
+          "externalName": "moveware_category"
+        },
+        {
+          "id": "16:4184219293917434342",
+          "name": "dropOffJobCode",
+          "type": 9,
+          "externalName": "dropoff_job_code"
+        },
+        {
+          "id": "17:572119857918671856",
+          "name": "linkedJobNumber",
+          "type": 9,
+          "externalName": "linked_job_number"
+        }
+      ],
+      "relations": []
+    },
+    {
+      "id": "30:1060269507178086766",
+      "lastPropertyId": "7:1054526123767068331",
+      "name": "LinkCrateArtworkComponent",
+      "externalName": "LinkCrateArtworkComponent",
+      "flags": 2,
+      "properties": [
+        {
+          "id": "1:4093250940622559829",
+          "name": "id",
+          "type": 6,
+          "flags": 1
+        },
+        {
+          "id": "2:5009712418103881100",
+          "name": "cartonCode",
+          "type": 9,
+          "externalName": "carton_code"
+        },
+        {
+          "id": "3:7151547902354983459",
+          "name": "cartonType",
+          "type": 9,
+          "externalName": "carton_type"
+        },
+        {
+          "id": "4:2540163725063271589",
+          "name": "parentCartonCode",
+          "type": 9,
+          "externalName": "parent_carton_code"
+        },
+        {
+          "id": "5:5347227989575727923",
+          "name": "parentCartonType",
+          "type": 9,
+          "externalName": "parent_carton_type"
+        },
+        {
+          "id": "6:4362126933454177693",
+          "name": "createdDate",
+          "type": 6,
+          "externalName": "created_date"
+        },
+        {
+          "id": "7:1054526123767068331",
+          "name": "updatedDate",
+          "type": 6,
+          "externalName": "updated_date"
+        }
+      ],
+      "relations": []
+    },
+    {
+      "id": "31:2628882909630177160",
+      "lastPropertyId": "4:8716707940862891002",
+      "name": "LinkDiaryIdJobNumber",
+      "externalName": "LinkDiaryIdJobNumber",
+      "flags": 2,
+      "properties": [
+        {
+          "id": "1:5540737813337320247",
+          "name": "id",
+          "type": 6,
+          "flags": 1
+        },
+        {
+          "id": "2:3348506082369773001",
+          "name": "jobCode",
+          "type": 9,
+          "externalName": "job_code"
+        },
+        {
+          "id": "3:2775613608137692326",
+          "name": "diaryId",
+          "type": 9,
+          "externalName": "diary_id"
+        },
+        {
+          "id": "4:8716707940862891002",
+          "name": "createdDate",
+          "type": 6,
+          "externalName": "created_date"
+        }
+      ],
+      "relations": []
+    },
+    {
+      "id": "32:8951028761496334602",
+      "lastPropertyId": "8:4057116980076265523",
+      "name": "MergedSpaceInfo",
+      "externalName": "MergedSpaceInfo",
+      "flags": 2,
+      "properties": [
+        {
+          "id": "1:7327085553634415360",
+          "name": "id",
+          "type": 6,
+          "flags": 1
+        },
+        {
+          "id": "2:4723954731412024404",
+          "name": "sourceSpaceId",
+          "type": 9,
+          "externalName": "source_space_id"
+        },
+        {
+          "id": "3:1372395816428419575",
+          "name": "targetSpaceId",
+          "type": 9,
+          "externalName": "target_space_id"
+        },
+        {
+          "id": "4:7143118353245083176",
+          "name": "jobCode",
+          "indexId": "23:267638605822968813",
+          "type": 9,
+          "externalName": "job_code",
+          "flags": 2048
+        },
+        {
+          "id": "5:2735947335442681179",
+          "name": "userId",
+          "type": 9,
+          "externalName": "user_id"
+        },
+        {
+          "id": "6:8886417970290869355",
+          "name": "deviceId",
+          "type": 9,
+          "externalName": "device_id"
+        },
+        {
+          "id": "7:982295237401237345",
+          "name": "createdDate",
+          "type": 6,
+          "externalName": "created_date"
+        },
+        {
+          "id": "8:4057116980076265523",
+          "name": "linkedJobNumber",
+          "type": 9,
+          "externalName": "linked_job_number"
+        }
+      ],
+      "relations": []
+    },
+    {
+      "id": "33:2908358480973476116",
+      "lastPropertyId": "5:6641738497657798404",
+      "name": "OMAContainerMasterInfo",
+      "externalName": "OMAContainerMasterInfo",
+      "flags": 2,
+      "properties": [
+        {
+          "id": "1:4224528956946744045",
+          "name": "id",
+          "type": 6,
+          "flags": 1
+        },
+        {
+          "id": "2:2223137122188885408",
+          "name": "containerCode",
+          "type": 9,
+          "externalName": "container_code"
+        },
+        {
+          "id": "3:4129526407434887874",
+          "name": "containerBranch",
+          "type": 9,
+          "externalName": "container_branch"
+        },
+        {
+          "id": "4:5430840904736454708",
+          "name": "containerStatus",
+          "type": 1,
+          "externalName": "container_status"
+        },
+        {
+          "id": "5:6641738497657798404",
+          "name": "containerType",
+          "type": 9,
+          "externalName": "container_type"
+        }
+      ],
+      "relations": []
+    },
+    {
+      "id": "34:7738301166198742652",
+      "lastPropertyId": "11:1299786532866080598",
+      "name": "OMAItemSyncStatus",
+      "externalName": "OMAItemSyncStatus",
+      "flags": 2,
+      "properties": [
+        {
+          "id": "1:129111291176201501",
+          "name": "id",
+          "type": 6,
+          "flags": 1
+        },
+        {
+          "id": "2:8144453040107047936",
+          "name": "jobCode",
+          "type": 9,
+          "externalName": "job_code"
+        },
+        {
+          "id": "3:6898637212303709843",
+          "name": "qrCode",
+          "type": 9,
+          "externalName": "qr_code"
+        },
+        {
+          "id": "4:8506425489399823959",
+          "name": "createdDate",
+          "type": 6,
+          "externalName": "created_date"
+        },
+        {
+          "id": "5:7863946165172786224",
+          "name": "updatedDate",
+          "type": 6,
+          "externalName": "updated_date"
+        },
+        {
+          "id": "6:9119221646127877629",
+          "name": "status",
+          "type": 9,
+          "externalName": "status"
+        },
+        {
+          "id": "7:5824591413478143118",
+          "name": "images",
+          "type": 30,
+          "externalName": "images"
+        },
+        {
+          "id": "8:8890703459169588298",
+          "name": "inId",
+          "type": 6,
+          "externalName": "in_id"
+        },
+        {
+          "id": "9:6650216413316518949",
+          "name": "diaryIds",
+          "type": 30,
+          "externalName": "diary_ids"
+        },
+        {
+          "id": "10:3233790971058318396",
+          "name": "containerType",
+          "type": 9,
+          "externalName": "container_type"
+        },
+        {
+          "id": "11:1299786532866080598",
+          "name": "container",
+          "type": 9,
+          "externalName": "container"
+        }
+      ],
+      "relations": []
+    },
+    {
+      "id": "35:4524548966672378406",
+      "lastPropertyId": "10:4210314398437739356",
+      "name": "PhotographicProof",
+      "externalName": "PhotographicProof",
+      "flags": 2,
+      "properties": [
+        {
+          "id": "1:8073257020976453878",
+          "name": "id",
+          "type": 6,
+          "flags": 1
+        },
+        {
+          "id": "2:3878610693659762489",
+          "name": "photographicProofId",
+          "type": 9,
+          "externalName": "photographic_proof_id"
+        },
+        {
+          "id": "3:7376135378761045527",
+          "name": "note",
+          "type": 9,
+          "externalName": "note"
+        },
+        {
+          "id": "4:5625878112244137566",
+          "name": "jobCode",
+          "indexId": "24:6473690605796514633",
+          "type": 9,
+          "externalName": "job_code",
+          "flags": 2048
+        },
+        {
+          "id": "5:9191429141424594499",
+          "name": "userId",
+          "type": 9,
+          "externalName": "user_id"
+        },
+        {
+          "id": "6:2413116102234191433",
+          "name": "deviceId",
+          "type": 9,
+          "externalName": "device_id"
+        },
+        {
+          "id": "7:1767151194011814001",
+          "name": "createDate",
+          "type": 6,
+          "externalName": "created_date"
+        },
+        {
+          "id": "8:7573640465550024425",
+          "name": "updatedDate",
+          "type": 6,
+          "externalName": "updated_date"
+        },
+        {
+          "id": "9:7044380177735143937",
+          "name": "updatedBy",
+          "type": 9,
+          "externalName": "updated_by"
+        },
+        {
+          "id": "10:4210314398437739356",
+          "name": "linkedJobNumber",
+          "type": 9,
+          "externalName": "linked_job_number"
+        }
+      ],
+      "relations": []
+    },
+    {
+      "id": "36:7961121269445434629",
+      "lastPropertyId": "13:6246759343117594457",
+      "name": "PhotographicProofImage",
+      "externalName": "PhotographicProofImage",
+      "flags": 2,
+      "properties": [
+        {
+          "id": "1:2879052637322840354",
+          "name": "id",
+          "type": 6,
+          "flags": 1
+        },
+        {
+          "id": "2:4904612049227340366",
+          "name": "photographicProofImageId",
+          "type": 9,
+          "externalName": "photographic_proof_image_id"
+        },
+        {
+          "id": "3:6634138236769662279",
+          "name": "photographicProofId",
+          "type": 9,
+          "externalName": "photographic_proof_id"
+        },
+        {
+          "id": "4:1908724427099086665",
+          "name": "jobCode",
+          "indexId": "25:7379290553472706398",
+          "type": 9,
+          "externalName": "job_code",
+          "flags": 2048
+        },
+        {
+          "id": "5:8249803442906120963",
+          "name": "photoIdentity",
+          "type": 9,
+          "externalName": "photo_identity"
+        },
+        {
+          "id": "6:7637826262129020575",
+          "name": "userId",
+          "type": 9,
+          "externalName": "user_id"
+        },
+        {
+          "id": "7:7778327827750959826",
+          "name": "deviceId",
+          "type": 9,
+          "externalName": "device_id"
+        },
+        {
+          "id": "8:1514945779797120477",
+          "name": "createDate",
+          "type": 6,
+          "externalName": "created_date"
+        },
+        {
+          "id": "9:7961385227560533835",
+          "name": "updatedDate",
+          "type": 6,
+          "externalName": "updated_date"
+        },
+        {
+          "id": "10:208537070139231687",
+          "name": "updatedBy",
+          "type": 9,
+          "externalName": "updated_by"
+        },
+        {
+          "id": "11:7528992031801873667",
+          "name": "photoVersion",
+          "type": 6,
+          "externalName": "photo_version"
+        },
+        {
+          "id": "12:4227488555056931378",
+          "name": "s3Key",
+          "type": 9,
+          "externalName": "s3_key"
+        },
+        {
+          "id": "13:6246759343117594457",
+          "name": "linkedJobNumber",
+          "type": 9,
+          "externalName": "linked_job_number"
+        }
+      ],
+      "relations": []
+    },
+    {
+      "id": "37:6019901481464884852",
+      "lastPropertyId": "7:6190780104806644951",
+      "name": "PropertyType",
+      "externalName": "PropertyType",
+      "flags": 2,
+      "properties": [
+        {
+          "id": "1:5812653196645506188",
+          "name": "id",
+          "type": 6,
+          "flags": 1
+        },
+        {
+          "id": "2:3920276637892270023",
+          "name": "propertyTypeId",
+          "type": 6,
+          "externalName": "property_type_id"
+        },
+        {
+          "id": "3:6755953825072016471",
+          "name": "propertyType",
+          "type": 9,
+          "externalName": "property_type"
+        },
+        {
+          "id": "4:2208122292432082908",
+          "name": "bgColor",
+          "type": 9,
+          "externalName": "bg_color"
+        },
+        {
+          "id": "5:7257431371894414303",
+          "name": "textColor",
+          "type": 9,
+          "externalName": "text_color"
+        },
+        {
+          "id": "6:5435098103128198250",
+          "name": "lightThemeBgColor",
+          "type": 9,
+          "externalName": "light_theme_bg_color"
+        },
+        {
+          "id": "7:6190780104806644951",
+          "name": "lightThemeTextColor",
+          "type": 9,
+          "externalName": "light_theme_text_color"
+        }
+      ],
+      "relations": []
+    },
+    {
+      "id": "38:8121592365474335438",
+      "lastPropertyId": "7:6067156370731407432",
+      "name": "ReplaceQRAudit",
+      "externalName": "ReplaceQRAudit",
+      "flags": 2,
+      "properties": [
+        {
+          "id": "1:3906157948721458813",
+          "name": "id",
+          "type": 6,
+          "flags": 1
+        },
+        {
+          "id": "2:7824776445114187047",
+          "name": "fromReplaceCode",
+          "type": 9,
+          "externalName": "from_replace_code"
+        },
+        {
+          "id": "3:7731712230980798322",
+          "name": "toReplaceCode",
+          "type": 9,
+          "externalName": "to_replace_code"
+        },
+        {
+          "id": "4:1215293155312413299",
+          "name": "userId",
+          "type": 9,
+          "externalName": "user_id"
+        },
+        {
+          "id": "5:4713005075866815123",
+          "name": "deviceId",
+          "type": 9,
+          "externalName": "device_id"
+        },
+        {
+          "id": "6:1769094102410938834",
+          "name": "jobCode",
+          "type": 9,
+          "externalName": "job_code"
+        },
+        {
+          "id": "7:6067156370731407432",
+          "name": "createdDate",
+          "type": 6,
+          "externalName": "created_date"
+        }
+      ],
+      "relations": []
+    },
+    {
+      "id": "39:7785471514069088874",
+      "lastPropertyId": "19:750933204361392863",
+      "name": "ResourceTimesheetInfo",
+      "externalName": "ResourceTimesheetInfo",
+      "flags": 2,
+      "properties": [
+        {
+          "id": "1:7224218313178431242",
+          "name": "id",
+          "type": 6,
+          "flags": 1
+        },
+        {
+          "id": "2:8149982185668820299",
+          "name": "resourceTimesheetId",
+          "type": 9,
+          "externalName": "resource_timesheet_id"
+        },
+        {
+          "id": "3:8122241748334348169",
+          "name": "timesheetId",
+          "type": 9,
+          "externalName": "timesheet_id"
+        },
+        {
+          "id": "4:5125579382457111658",
+          "name": "hours",
+          "type": 9,
+          "externalName": "hours"
+        },
+        {
+          "id": "5:1173608841483436154",
+          "name": "startTime",
+          "type": 9,
+          "externalName": "start_time"
+        },
+        {
+          "id": "6:8315334087816033481",
+          "name": "finishTime",
+          "type": 9,
+          "externalName": "finish_time"
+        },
+        {
+          "id": "7:4251701231721923431",
+          "name": "breakTime",
+          "type": 9,
+          "externalName": "break_time"
+        },
+        {
+          "id": "8:5156745600812439339",
+          "name": "resourceId",
+          "type": 9,
+          "externalName": "resource_id"
+        },
+        {
+          "id": "9:2503130496836324109",
+          "name": "type",
+          "type": 9,
+          "externalName": "type"
+        },
+        {
+          "id": "10:4962359910700986698",
+          "name": "diaryId",
+          "indexId": "26:1875803249225338010",
+          "type": 9,
+          "externalName": "diary_id",
+          "flags": 2048
+        },
+        {
+          "id": "11:1174571860816038742",
+          "name": "userId",
+          "type": 9,
+          "externalName": "user_id"
+        },
+        {
+          "id": "12:8326334359688058965",
+          "name": "userName",
+          "type": 9,
+          "externalName": "user_name"
+        },
+        {
+          "id": "13:1241372074219406686",
+          "name": "fullName",
+          "type": 9,
+          "externalName": "full_name"
+        },
+        {
+          "id": "14:1212127174854858545",
+          "name": "description",
+          "type": 9,
+          "externalName": "description"
+        },
+        {
+          "id": "15:1052790825980689707",
+          "name": "jobCode",
+          "type": 9,
+          "externalName": "job_code"
+        },
+        {
+          "id": "16:8825477256815242711",
+          "name": "deviceId",
+          "type": 9,
+          "externalName": "device_id"
+        },
+        {
+          "id": "17:363780029230631921",
+          "name": "createdDate",
+          "type": 6,
+          "externalName": "created_date"
+        },
+        {
+          "id": "18:3664088048942004086",
+          "name": "updatedDate",
+          "type": 6,
+          "externalName": "updated_date"
+        },
+        {
+          "id": "19:750933204361392863",
+          "name": "linkedJobNumber",
+          "type": 9,
+          "externalName": "linked_job_number"
+        }
+      ],
+      "relations": []
+    },
+    {
+      "id": "40:3932076648672235509",
+      "lastPropertyId": "12:6250863909175059598",
+      "name": "SendEmailSync",
+      "externalName": "SendEmailSync",
+      "flags": 2,
+      "properties": [
+        {
+          "id": "1:1499494640056232166",
+          "name": "id",
+          "type": 6,
+          "flags": 1
+        },
+        {
+          "id": "2:8164069585010227740",
+          "name": "name",
+          "type": 9,
+          "externalName": "name"
+        },
+        {
+          "id": "3:7788231845393596663",
+          "name": "email",
+          "type": 9,
+          "externalName": "email"
+        },
+        {
+          "id": "4:776850644721462590",
+          "name": "notes",
+          "type": 9,
+          "externalName": "notes"
+        },
+        {
+          "id": "5:1973662125148848770",
+          "name": "deviceId",
+          "type": 9,
+          "externalName": "device_id"
+        },
+        {
+          "id": "6:5238168982923037133",
+          "name": "createdDate",
+          "type": 6,
+          "externalName": "created_date"
+        },
+        {
+          "id": "7:4671143827306952226",
+          "name": "jobNumber",
+          "indexId": "27:1871249776076343369",
+          "type": 9,
+          "externalName": "job_number",
+          "flags": 2048
+        },
+        {
+          "id": "8:5387191441373883978",
+          "name": "isSynced",
+          "type": 1,
+          "externalName": "is_synced"
+        },
+        {
+          "id": "9:7218314407930991103",
+          "name": "dateSynced",
+          "type": 6,
+          "externalName": "date_synced"
+        },
+        {
+          "id": "10:5363459108527282168",
+          "name": "userId",
+          "type": 9,
+          "externalName": "user_id"
+        },
+        {
+          "id": "11:8044086952970686624",
+          "name": "crewComments",
+          "type": 9,
+          "externalName": "crew_comments"
+        },
+        {
+          "id": "12:6250863909175059598",
+          "name": "linkedJobNumber",
+          "type": 9,
+          "externalName": "linked_job_number"
+        }
+      ],
+      "relations": []
+    },
+    {
+      "id": "41:3779595596456358507",
+      "lastPropertyId": "18:4420746858844898097",
+      "name": "Space",
+      "externalName": "Space",
+      "flags": 2,
+      "properties": [
+        {
+          "id": "1:3374585442579067232",
+          "name": "id",
+          "type": 6,
+          "flags": 1
+        },
+        {
+          "id": "2:2367398299158415051",
+          "name": "spaceId",
+          "type": 9,
+          "externalName": "space_id"
+        },
+        {
+          "id": "3:4683606765991990720",
+          "name": "spaceTypeId",
+          "type": 6,
+          "externalName": "space_type_id"
+        },
+        {
+          "id": "4:8761444303547392481",
+          "name": "spaceName",
+          "type": 9,
+          "externalName": "space_name"
+        },
+        {
+          "id": "5:166173733542573589",
+          "name": "photoIdentity",
+          "type": 9,
+          "externalName": "photo_identity"
+        },
+        {
+          "id": "6:5251590437824186396",
+          "name": "s3Key",
+          "type": 9,
+          "externalName": "s3_key"
+        },
+        {
+          "id": "7:5834266076421721749",
+          "name": "jobCode",
+          "indexId": "28:7209523571279816037",
+          "type": 9,
+          "externalName": "job_code",
+          "flags": 2048
+        },
+        {
+          "id": "8:1515956263019268547",
+          "name": "userId",
+          "type": 9,
+          "externalName": "user_id"
+        },
+        {
+          "id": "9:9055988178723471530",
+          "name": "createdDate",
+          "type": 6,
+          "externalName": "created_date"
+        },
+        {
+          "id": "10:4712236879336803668",
+          "name": "updatedDate",
+          "type": 6,
+          "externalName": "updated_date"
+        },
+        {
+          "id": "11:5174043408366811505",
+          "name": "spacePhotos",
+          "type": 30,
+          "externalName": "space_photos"
+        },
+        {
+          "id": "12:8336960079934377160",
+          "name": "status",
+          "type": 9,
+          "externalName": "status"
+        },
+        {
+          "id": "13:7998474154368579283",
+          "name": "isDisplay",
+          "type": 1,
+          "externalName": "is_display"
+        },
+        {
+          "id": "14:5555449143561924902",
+          "name": "mergedSpaceId",
+          "type": 9,
+          "externalName": "merged_space_id"
+        },
+        {
+          "id": "15:3200602844984347779",
+          "name": "deviceId",
+          "type": 9,
+          "externalName": "device_id"
+        },
+        {
+          "id": "16:8174863992904402079",
+          "name": "notes",
+          "type": 9,
+          "externalName": "notes"
+        },
+        {
+          "id": "17:828172304364394380",
+          "name": "spaceVariant",
+          "type": 9,
+          "externalName": "space_variant"
+        },
+        {
+          "id": "18:4420746858844898097",
+          "name": "diaryId",
+          "type": 9,
+          "externalName": "diary_id"
+        }
+      ],
+      "relations": []
+    },
+    {
+      "id": "42:7061924784353157678",
+      "lastPropertyId": "5:915297147446530895",
+      "name": "SpaceType",
+      "externalName": "SpaceType",
+      "flags": 2,
+      "properties": [
+        {
+          "id": "1:3350307336511337017",
+          "name": "id",
+          "type": 6,
+          "flags": 1
+        },
+        {
+          "id": "2:8471529714297811666",
+          "name": "spaceTypeId",
+          "type": 6,
+          "externalName": "space_type_id"
+        },
+        {
+          "id": "3:811795810058361242",
+          "name": "spaceType",
+          "type": 9,
+          "externalName": "space_type"
+        },
+        {
+          "id": "4:7761887041135859488",
+          "name": "iconUrl",
+          "type": 9,
+          "externalName": "icon_url"
+        },
+        {
+          "id": "5:915297147446530895",
+          "name": "propertyTypeId",
+          "type": 6,
+          "externalName": "property_type_id"
+        }
+      ],
+      "relations": []
+    },
+    {
+      "id": "43:5185955849411805487",
+      "lastPropertyId": "13:7541361554096153403",
+      "name": "StorageLocationDetails",
+      "externalName": "StorageLocationDetails",
+      "flags": 2,
+      "properties": [
+        {
+          "id": "1:2763052149018151860",
+          "name": "id",
+          "type": 6,
+          "flags": 1
+        },
+        {
+          "id": "2:7398226394787556757",
+          "name": "jobReviewId",
+          "type": 9,
+          "externalName": "unique_id"
+        },
+        {
+          "id": "3:3156327718600724076",
+          "name": "jobNumber",
+          "indexId": "29:383391358161697861",
+          "type": 9,
+          "externalName": "job_number",
+          "flags": 2048
+        },
+        {
+          "id": "4:9152195794796185098",
+          "name": "linkedJobNumber",
+          "type": 9,
+          "externalName": "linked_job_number"
+        },
+        {
+          "id": "5:5503159709772966934",
+          "name": "sdLocationNumber",
+          "type": 9,
+          "externalName": "sd_location_number"
+        },
+        {
+          "id": "6:1698066886684168996",
+          "name": "sdSealLeft",
+          "type": 9,
+          "externalName": "sd_seal_left"
+        },
+        {
+          "id": "7:7625358632720190683",
+          "name": "sdSealRight",
+          "type": 9,
+          "externalName": "sd_seal_right"
+        },
+        {
+          "id": "8:3891234687839224166",
+          "name": "sdCuftCount",
+          "type": 9,
+          "externalName": "sd_cuft_count"
+        },
+        {
+          "id": "9:9182477526654137138",
+          "name": "sdCuftMaxCount",
+          "type": 9,
+          "externalName": "sd_cuft_max_count"
+        },
+        {
+          "id": "10:2719112388642170727",
+          "name": "sdDescription",
+          "type": 9,
+          "externalName": "sd_description"
+        },
+        {
+          "id": "11:1948835371411146745",
+          "name": "sdPackedBy",
+          "type": 9,
+          "externalName": "sd_packed_by"
+        },
+        {
+          "id": "12:5355195074170080109",
+          "name": "sdPackedByImageUrl",
+          "type": 9,
+          "externalName": "sd_packed_by_image_url"
+        },
+        {
+          "id": "13:7541361554096153403",
+          "name": "job_reviewId",
+          "indexId": "2:3860853975026893569",
+          "type": 11,
+          "flags": 520,
+          "relationTarget": "JobReviewInfo"
+        }
+      ],
+      "relations": []
+    },
+    {
+      "id": "44:5066035876221255706",
+      "lastPropertyId": "3:2589169271735693634",
+      "name": "SystemConfig",
+      "externalName": "SystemConfig",
+      "flags": 2,
+      "properties": [
+        {
+          "id": "1:1174467058158394364",
+          "name": "id",
+          "type": 6,
+          "flags": 1
+        },
+        {
+          "id": "2:6392688879870410646",
+          "name": "crSendAllImages",
+          "type": 1,
+          "externalName": "cr_send_all_images"
+        },
+        {
+          "id": "3:2589169271735693634",
+          "name": "minSupportedVersion",
+          "type": 9,
+          "externalName": "min_supported_version"
+        }
+      ],
+      "relations": []
+    },
+    {
+      "id": "45:8002484486830169178",
+      "lastPropertyId": "9:1801423036860910287",
+      "name": "UnpackedItemAudit",
+      "externalName": "UnpackedItemAudit",
+      "flags": 2,
+      "properties": [
+        {
+          "id": "1:4377151877476557079",
+          "name": "id",
+          "type": 6,
+          "flags": 1
+        },
+        {
+          "id": "2:197660350158983574",
+          "name": "userId",
+          "type": 9,
+          "externalName": "user_id"
+        },
+        {
+          "id": "3:4224360672455187301",
+          "name": "itemId",
+          "type": 9,
+          "externalName": "item_id"
+        },
+        {
+          "id": "4:8622551578121499224",
+          "name": "itemIdHash",
+          "type": 6,
+          "externalName": "item_id_hash"
+        },
+        {
+          "id": "5:8251377819048263980",
+          "name": "cartonCode",
+          "type": 9,
+          "externalName": "carton_code"
+        },
+        {
+          "id": "6:2028060274874001511",
+          "name": "jobCode",
+          "indexId": "30:4055044557003126159",
+          "type": 9,
+          "externalName": "job_code",
+          "flags": 2048
+        },
+        {
+          "id": "7:2197417938933198531",
+          "name": "deviceId",
+          "type": 9,
+          "externalName": "device_id"
+        },
+        {
+          "id": "8:9027680246885061216",
+          "name": "unpackedDate",
+          "type": 6,
+          "externalName": "unpacked_date"
+        },
+        {
+          "id": "9:1801423036860910287",
+          "name": "linkedJobNumber",
+          "type": 9,
+          "externalName": "linked_job_number"
+        }
+      ],
+      "relations": []
+    },
+    {
+      "id": "46:798971978553681991",
+      "lastPropertyId": "8:7903991471906161746",
+      "name": "UserCrewDetail",
+      "externalName": "UserCrewDetail",
+      "flags": 2,
+      "properties": [
+        {
+          "id": "1:1643836712192287703",
+          "name": "id",
+          "type": 6,
+          "flags": 1
+        },
+        {
+          "id": "2:8223271520835264182",
+          "name": "userId",
+          "type": 9,
+          "externalName": "user_id"
+        },
+        {
+          "id": "3:9091807786844619812",
+          "name": "name",
+          "type": 9,
+          "externalName": "name"
+        },
+        {
+          "id": "4:2894755909156957454",
+          "name": "userName",
+          "type": 9,
+          "externalName": "user_name"
+        },
+        {
+          "id": "5:3909945591790335068",
+          "name": "userType",
+          "type": 6,
+          "externalName": "user_type"
+        },
+        {
+          "id": "6:2390625034570860735",
+          "name": "profileImage",
+          "type": 9,
+          "externalName": "profile_image"
+        },
+        {
+          "id": "7:4598871981928700565",
+          "name": "loginDate",
+          "type": 6,
+          "externalName": "login_date"
+        },
+        {
+          "id": "8:7903991471906161746",
+          "name": "updatedDate",
+          "type": 6,
+          "externalName": "updated_date"
+        }
+      ],
+      "relations": []
+    },
+    {
+      "id": "47:4479256521474070537",
+      "lastPropertyId": "15:1714651597802182545",
+      "name": "UserDetail",
+      "externalName": "UserDetail",
+      "flags": 2,
+      "properties": [
+        {
+          "id": "1:8348130580064305977",
+          "name": "id",
+          "type": 6,
+          "flags": 1
+        },
+        {
+          "id": "2:7731762949509846091",
+          "name": "userId",
+          "indexId": "31:966827482529082731",
+          "type": 9,
+          "externalName": "user_id",
+          "flags": 2048
+        },
+        {
+          "id": "3:5102979027176531013",
+          "name": "name",
+          "type": 9,
+          "externalName": "name"
+        },
+        {
+          "id": "4:8983266076108811242",
+          "name": "profileImage",
+          "type": 9,
+          "externalName": "profile_image"
+        },
+        {
+          "id": "5:8810205808187676205",
+          "name": "email",
+          "type": 9,
+          "externalName": "email"
+        },
+        {
+          "id": "6:5468363112515547447",
+          "name": "companyName",
+          "type": 9,
+          "externalName": "company_name"
+        },
+        {
+          "id": "7:2356121217086643978",
+          "name": "userName",
+          "type": 9,
+          "externalName": "user_name"
+        },
+        {
+          "id": "8:8238849232205286178",
+          "name": "role",
+          "type": 9,
+          "externalName": "role"
+        },
+        {
+          "id": "9:6823787894128001664",
+          "name": "authToken",
+          "type": 9,
+          "externalName": "auth_token"
+        },
+        {
+          "id": "10:5734758329368784911",
+          "name": "ctUser",
+          "type": 1,
+          "externalName": "ct_user"
+        },
+        {
+          "id": "11:3345555764626595433",
+          "name": "demoUser",
+          "type": 1,
+          "externalName": "demo_user"
+        },
+        {
+          "id": "12:7661286691270439128",
+          "name": "userType",
+          "type": 6,
+          "externalName": "user_type"
+        },
+        {
+          "id": "13:8739603005715474574",
+          "name": "loginDate",
+          "type": 6,
+          "externalName": "login_date"
+        },
+        {
+          "id": "14:6704329437008681797",
+          "name": "updatedDate",
+          "type": 6,
+          "externalName": "updated_date"
+        },
+        {
+          "id": "15:1714651597802182545",
+          "name": "deviceId",
+          "type": 9,
+          "externalName": "device_id"
+        }
+      ],
+      "relations": []
+    },
+    {
+      "id": "48:2142630020995619158",
+      "lastPropertyId": "9:5331592628790337986",
+      "name": "UserPreference",
+      "externalName": "UserPreference",
+      "flags": 2,
+      "properties": [
+        {
+          "id": "1:2354555041229753475",
+          "name": "id",
+          "type": 6,
+          "flags": 1
+        },
+        {
+          "id": "2:3569715607467382982",
+          "name": "userId",
+          "indexId": "32:152645964000469747",
+          "type": 9,
+          "externalName": "user_id",
+          "flags": 2048
+        },
+        {
+          "id": "3:2598922970751517708",
+          "name": "weightType",
+          "type": 9,
+          "externalName": "weight_type"
+        },
+        {
+          "id": "4:2033424292553676901",
+          "name": "measurementType",
+          "type": 9,
+          "externalName": "measurements_type"
+        },
+        {
+          "id": "5:4796331888712338104",
+          "name": "currencyType",
+          "type": 9,
+          "externalName": "currency_type"
+        },
+        {
+          "id": "6:5651336499825809559",
+          "name": "createdDate",
+          "type": 6,
+          "externalName": "created_date"
+        },
+        {
+          "id": "7:4132652870076247420",
+          "name": "updatedDate",
+          "type": 6,
+          "externalName": "updated_date"
+        },
+        {
+          "id": "8:263921581344887795",
+          "name": "dateFormatType",
+          "type": 9,
+          "externalName": "date_format_type"
+        },
+        {
+          "id": "9:5331592628790337986",
+          "name": "deviceId",
+          "type": 9,
+          "externalName": "device_id"
+        }
+      ],
+      "relations": []
+    },
+    {
+      "id": "49:1529275240192427289",
+      "lastPropertyId": "8:1760256973205588486",
+      "name": "WarehouseHandoverDetails",
+      "externalName": "WarehouseHandoverDetails",
+      "flags": 2,
+      "properties": [
+        {
+          "id": "1:2980753343104501523",
+          "name": "id",
+          "type": 6,
+          "flags": 1
+        },
+        {
+          "id": "2:589546001659410022",
+          "name": "jobNumber",
+          "type": 9,
+          "externalName": "job_number"
+        },
+        {
+          "id": "3:185787571102545214",
+          "name": "linkedJobNumber",
+          "type": 9,
+          "externalName": "linked_job_number"
+        },
+        {
+          "id": "4:3142805322712781569",
+          "name": "warehouseDiaries",
+          "type": 30,
+          "externalName": "warehouse_diaries"
+        },
+        {
+          "id": "5:4090026215691297686",
+          "name": "createdDate",
+          "type": 6,
+          "externalName": "created_date"
+        },
+        {
+          "id": "6:2823847573708818636",
+          "name": "updatedDate",
+          "type": 6,
+          "externalName": "updated_date"
+        },
+        {
+          "id": "7:2220563772905606741",
+          "name": "deviceId",
+          "type": 9,
+          "externalName": "device_id"
+        },
+        {
+          "id": "8:1760256973205588486",
+          "name": "pieces",
+          "type": 6,
+          "externalName": "pieces"
+        }
+      ],
+      "relations": []
+    }
+  ],
+  "lastEntityId": "49:1529275240192427289",
+  "lastIndexId": "32:152645964000469747",
+  "lastRelationId": "4:1122478176411906755",
+  "lastSequenceId": "0:0",
+  "modelVersion": 5,
+  "modelVersionParserMinimum": 5,
+  "retiredEntityUids": [],
+  "retiredIndexUids": [],
+  "retiredPropertyUids": [
+    5467223646478220531,
+    2606249680318205349,
+    5111115954798693538
+  ],
+  "retiredRelationUids": [
+    5346141496057326023,
+    1405926648845913511
+  ],
+  "version": 1
+}
