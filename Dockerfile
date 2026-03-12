@@ -1,4 +1,13 @@
-FROM 123456789012.dkr.ecr.us-east-1.amazonaws.com/objectbox-sync-base:2026-03-11
+# #FROM objectboxio/sync:sync-server-2026-03-11
+# FROM 834719376359.dkr.ecr.us-west-1.amazonaws.com/us-west-1-dev-object-box:sync-server-2026-03-11
+# # Create data dir and copy your model file
+# RUN mkdir -p /data
+# COPY . /data/
+
+# # Optional: Set working dir or permissions
+# WORKDIR /data
+
+FROM 834719376359.dkr.ecr.us-west-1.amazonaws.com/us-west-1-dev-object-box:sync-server-2026-03-11
 
 # Create data directory with correct permissions for ObjectBox
 RUN mkdir -p /data/objectbox && \
