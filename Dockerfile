@@ -9,19 +9,17 @@
 
 FROM 834719376359.dkr.ecr.us-west-1.amazonaws.com/us-west-1-dev-object-box:sync-server-2026-03-11
 
-# Create data directory with correct permissions for ObjectBox
+# Create data directory FIRST with correct permissions
 RUN mkdir -p /data/objectbox && \
-    chmod 755 /data && \
-    chmod 777 /data/objectbox
+    chmod 777 /data /data/objectbox
 
-# Copy your files (non-root user safe)
-COPY objectbox/ /data/
+# Copy WITH correct ownership/permissions at COPY time (key fix!)
+COPY --chown=1000:1000 --chmod=777 objectbox/ /data/
 
-# Fix all permissions recursively for ObjectBox
-RUN chmod -R 777 /data && \
-    chown -R 1000:1000 /data
+# Verify permissions (optional)
+RUN ls -la /data/
 
-# Switch to non-root user (ObjectBox expects this)
+# Run as non-root user
 USER 1000:1000
 
 WORKDIR /data
