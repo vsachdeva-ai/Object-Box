@@ -2,6 +2,9 @@ name: Build and Push ObjectBox to ECR
 
 on:
   push:
+    branches:
+      - dev
+      - main
     paths:
       - 'objectbox/**'
   workflow_dispatch:
@@ -26,7 +29,7 @@ jobs:
 
       - name: Build, Tag, and Push Image to ECR
         env:
-          ECR_REGISTRY: ${{ steps.login-ecr.registry }}
+          ECR_REGISTRY: 834719376359.dkr.ecr.us-west-1.amazonaws.com
           ECR_REPOSITORY: us-west-1-dev-object-box
         run: |
           # Get the first 5 characters of the commit hash
