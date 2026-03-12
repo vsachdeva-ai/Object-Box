@@ -1,0 +1,44 @@
+name: Build and Push ObjectBox to ECR
+
+on:
+  push:
+    paths:
+      - 'objectbox/**'
+  workflow_dispatch:
+
+jobs:
+  build-and-push:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      - name: Configure AWS Credentials
+        uses: aws-actions/configure-aws-credentials@v4
+        with:
+          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY }}
+          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          aws-region: us-west-1
+
+      - name: Login to Amazon ECR
+        id: login-ecr
+        uses: aws-actions/amazon-ecr-login@v2
+
+      - name: Build, Tag, and Push Image to ECR
+        env:
+          ECR_REGISTRY: ${{ steps.login-ecr.registry }}
+          ECR_REPOSITORY: us-west-1-dev-object-box
+        run: |
+          # Get the first 5 characters of the commit hash
+          IMAGE_TAG=$(echo ${{ github.sha }} | cut -c1-5)
+          
+          echo "Building image with tag: $IMAGE_TAG"
+          
+          # Build the docker image
+          # Using objectbox/Dockerfile and setting context to current dir to allow COPY objectbox/
+          docker build -t $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG -f objectbox/Dockerfile .
+          
+          # Push the image to ECR
+          docker push $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG
+          
+          echo "Image pushed successfully: $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG"
