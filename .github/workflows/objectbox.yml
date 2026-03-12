@@ -38,8 +38,8 @@ jobs:
           echo "Building image with tag: $IMAGE_TAG"
           
           # Build the docker image
-          # Using objectbox/Dockerfile and setting context to current dir to allow COPY objectbox/
-          docker build -t $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG -f objectbox/Dockerfile .
+          # Dockerfile is at the root of the repository
+          docker build -t $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG -f Dockerfile .
           
           # Push the image to ECR
           docker push $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG
