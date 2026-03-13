@@ -7,19 +7,34 @@
 # # Optional: Set working dir or permissions
 # WORKDIR /data
 
+# FROM 834719376359.dkr.ecr.us-west-1.amazonaws.com/us-west-1-dev-object-box:sync-server-2026-03-11
+
+# # Create data directory with correct permissions for ObjectBox
+# RUN mkdir -p /data/objectbox && \
+#     chmod 755 /data && \
+#     chmod 777 /data/objectbox
+
+# # Copy your files (non-root user safe)
+# COPY objectbox/ /data/
+
+# # Fix all permissions recursively for ObjectBox
+# RUN chmod -R 777 /data && \
+#     chown -R 1000:1000 /data
+
+# # Switch to non-root user (ObjectBox expects this)
+# USER 1000:1000
+
+# WORKDIR /data
+
 FROM 834719376359.dkr.ecr.us-west-1.amazonaws.com/us-west-1-dev-object-box:sync-server-2026-03-11
 
-# Create data directory FIRST with correct permissions
-RUN mkdir -p /app-model/objectbox && \
-    chmod 777 /app-model /app-model/objectbox
-
-# Copy WITH correct ownership/permissions at COPY time (key fix!)
+# Copy automatically creates /app-model/ - NO mkdir needed
 COPY --chown=1000:1000 --chmod=777 objectbox/ /app-model/
 
-# Verify permissions (optional)
+# Verify permissions (optional, runs as root)
 RUN ls -la /app-model/
 
-# Run as non-root user
+# Switch to non-root user
 USER 1000:1000
 
-WORKDIR /app-model
+WORKDIR /data
